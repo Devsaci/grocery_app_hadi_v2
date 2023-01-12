@@ -37,7 +37,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         title: TextWidget(
           text: 'Products on sale',
           color: color,
-          textSize: 24.0,
+          textSize: 18.0,
           isTitle: true,
         ),
       ),
