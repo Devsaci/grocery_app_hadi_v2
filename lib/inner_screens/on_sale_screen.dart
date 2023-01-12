@@ -1,6 +1,7 @@
 //30. Implement the sale screen
 
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
 
@@ -23,6 +24,10 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         leading: InkWell(
           borderRadius: BorderRadius.circular(12),
           onTap: () {},
+          child: Icon(
+            IconlyLight.arrowLeft2,
+            color: color,
+          ),
         ),
       ),
       body: GridView.count(
