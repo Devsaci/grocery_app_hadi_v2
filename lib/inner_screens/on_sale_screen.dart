@@ -23,7 +23,9 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
       appBar: AppBar(
         leading: InkWell(
           borderRadius: BorderRadius.circular(12),
-          onTap: () {},
+          onTap: () {
+            Navigator.pop(context);
+          },
           child: Icon(
             IconlyLight.arrowLeft2,
             color: color,
