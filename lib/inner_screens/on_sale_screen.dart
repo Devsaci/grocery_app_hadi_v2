@@ -32,6 +32,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
           ),
         ),
         elevation: 5,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       body: GridView.count(
         shrinkWrap: true,
