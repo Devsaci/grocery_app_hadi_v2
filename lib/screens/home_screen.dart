@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     // final themeState = utils.getTheme;
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
+    GlobalMethods globalMethods = GlobalMethods();
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
