@@ -31,6 +31,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
             color: color,
           ),
         ),
+        elevation: 5,
       ),
       body: GridView.count(
         shrinkWrap: true,
