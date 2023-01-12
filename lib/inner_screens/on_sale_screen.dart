@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class OnSaleScreen extends StatefulWidget {
   static const routeName = "/OnSleScreen";
@@ -33,6 +34,12 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         ),
         elevation: 5,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        title: TextWidget(
+          text: 'Products on sale',
+          color: color,
+          textSize: 24.0,
+          isTitle: true,
+        ),
       ),
       body: GridView.count(
         shrinkWrap: true,
