@@ -18,7 +18,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
   @override
   Widget build(BuildContext context) {
     //32. Handle UI if there is no products on sale. (Create new UI to it)
-
+    bool _isEmpty = false;
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
