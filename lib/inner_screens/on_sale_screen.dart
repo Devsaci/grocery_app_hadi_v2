@@ -47,9 +47,11 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
           // ignore: dead_code
           ? Center(
               child: TextWidget(
-                  text: 'No products on sale yet!,\nStay tuned',
-                  color: color,
-                  textSize: 18),
+                text: 'No products on sale yet!,\nStay tuned',
+                color: color,
+                textSize: 18,
+                fontWeight: FontWeight.w700,
+              ),
             )
           : GridView.count(
               shrinkWrap: true,

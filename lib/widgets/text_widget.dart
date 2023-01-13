@@ -9,6 +9,7 @@ class TextWidget extends StatelessWidget {
     required this.textSize,
     this.isTitle = false,
     this.maxLines = 10,
+    FontWeight? fontWeight,
   }) : super(key: key);
 
   final String text;
