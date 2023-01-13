@@ -48,6 +48,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
           ? Center(
               child: Text(
                 'No products on sale yet!,\nStay tuned',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: color,
                   fontSize: 18,
