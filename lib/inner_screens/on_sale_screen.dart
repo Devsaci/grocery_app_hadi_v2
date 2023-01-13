@@ -46,13 +46,20 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
       body: _isEmpty
           // ignore: dead_code
           ? Center(
-              child: Text(
-                'No products on sale yet!,\nStay tuned',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: color,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Text(
+                      'No products on sale yet!,\nStay tuned',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: color,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             )
