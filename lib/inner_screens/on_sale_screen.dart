@@ -18,7 +18,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
   @override
   Widget build(BuildContext context) {
     //32. Handle UI if there is no products on sale. (Create new UI to it)
-    bool _isEmpty = false;
+    bool _isEmpty = true;
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
@@ -43,14 +43,22 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
           isTitle: true,
         ),
       ),
-      body: GridView.count(
-        shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
-        crossAxisCount: 2,
-        padding: EdgeInsets.zero,
-        childAspectRatio: size.width / (size.height * 0.59),
-        children: List.generate(6, (index) => const OnSaleWidget()),
-      ),
+      body: _isEmpty
+          // ignore: dead_code
+          ? Center(
+              child: TextWidget(
+                  text: 'No products on sale yet!,\nStay tuned',
+                  color: color,
+                  textSize: 18),
+            )
+          : GridView.count(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              crossAxisCount: 2,
+              padding: EdgeInsets.zero,
+              childAspectRatio: size.width / (size.height * 0.59),
+              children: List.generate(6, (index) => const OnSaleWidget()),
+            ),
     );
   }
 }
