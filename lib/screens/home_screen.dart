@@ -63,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
             TextButton(
               onPressed: () {
                 // Navigator.pushNamed(context, OnSaleScreen.routeName);
+                print("OnSaleScreen");
                 GlobalMethods.navigateTo(
                   ctx: context,
                   routeName: OnSaleScreen.routeName,
@@ -126,10 +127,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   // const Spacer(),
                   TextButton(
                     onPressed: () {
+                      print("+++++++++ FeedsScreen ++++++++++");
                       GlobalMethods.navigateTo(
                         ctx: context,
                         routeName: FeedsScreen.routeName,
                       );
+                      print("******** FeedsScreen *******");
                     },
                     child: TextWidget(
                       text: 'Browse  all',
