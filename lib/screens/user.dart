@@ -1,9 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
+
+import '../provider/dark_theme_provider.dart';
+import '../widgets/text_widget.dart';
 
 class UserScreen extends StatefulWidget {
   const UserScreen({Key? key}) : super(key: key);

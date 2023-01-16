@@ -1,13 +1,14 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/inner_screens/on_sale_screen.dart';
-import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/feed_items.dart';
-import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../inner_screens/feeds_screen.dart';
+import '../inner_screens/on_sale_screen.dart';
+import '../services/global_methods.dart';
+import '../services/utils.dart';
+import '../widgets/feed_items.dart';
+import '../widgets/on_sale_widget.dart';
+import '../widgets/text_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -63,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 // Navigator.pushNamed(context, OnSaleScreen.routeName);
                 GlobalMethods.navigateTo(
-                  context: context,
+                  ctx: context,
                   routeName: OnSaleScreen.routeName,
                 );
               },
@@ -101,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: size.height * 0.24,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (BuildContext context, int index) {
+                      itemBuilder: (ctx, index) {
                         return const OnSaleWidget();
                       },
                       itemCount: 6,
@@ -124,7 +125,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   // const Spacer(),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      GlobalMethods.navigateTo(
+                        ctx: context,
+                        routeName: FeedsScreen.routeName,
+                      );
+                    },
                     child: TextWidget(
                       text: 'Browse  all',
                       maxLines: 1,

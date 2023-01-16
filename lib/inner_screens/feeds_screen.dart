@@ -2,13 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+
+import '../services/utils.dart';
+import '../widgets/text_widget.dart';
 
 class FeedsScreen extends StatefulWidget {
   static const routeName = "/FeedsScreenState";
-  const FeedsScreen({super.key});
-
+  const FeedsScreen({Key? key}) : super(key: key);
   @override
   State<FeedsScreen> createState() => _FeedsScreenState();
 }
@@ -17,7 +17,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
-
+    Size size = Utils(context).getScreenSize;
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(

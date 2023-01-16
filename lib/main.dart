@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:grocery_app_hadi_v1/const/theme_data.dart';
-import 'package:grocery_app_hadi_v1/inner_screens/feeds_screen.dart';
-import 'package:grocery_app_hadi_v1/inner_screens/on_sale_screen.dart';
-import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
-import 'package:grocery_app_hadi_v1/screens/btm_bar.dart';
 
 import 'package:provider/provider.dart';
+
+import 'const/theme_data.dart';
+import 'inner_screens/feeds_screen.dart';
+import 'inner_screens/on_sale_screen.dart';
+import 'provider/dark_theme_provider.dart';
+import 'screens/btm_bar.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -54,8 +55,8 @@ class _MyAppState extends State<MyApp> {
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
           home: const BottomBarScreen(),
           routes: {
-            OnSaleScreen.routeName: (context) => const OnSaleScreen(),
-            FeedsScreen.routeName: (context) => const FeedsScreen(),
+            OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
+            FeedsScreen.routeName: (ctx) => const FeedsScreen(),
           },
         );
       }),

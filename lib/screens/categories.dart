@@ -1,9 +1,10 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+
+import '../services/utils.dart';
+import '../widgets/categories_widget.dart';
+import '../widgets/text_widget.dart';
 
 class CategoriesScreen extends StatelessWidget {
   CategoriesScreen({Key? key}) : super(key: key);
