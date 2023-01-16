@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:grocery_app_hadi_v1/const/theme_data.dart';
+import 'package:grocery_app_hadi_v1/inner_screens/feeds_screen.dart';
 import 'package:grocery_app_hadi_v1/inner_screens/on_sale_screen.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/screens/btm_bar.dart';
@@ -54,6 +55,7 @@ class _MyAppState extends State<MyApp> {
           home: const BottomBarScreen(),
           routes: {
             OnSaleScreen.routeName: (context) => const OnSaleScreen(),
+            FeedsScreen.routeName: (context) => const FeedsScreen(),
           },
         );
       }),
