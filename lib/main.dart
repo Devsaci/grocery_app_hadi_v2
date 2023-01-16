@@ -31,20 +31,19 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   DarkThemeProvider themeChangeProvider = DarkThemeProvider();
 
-  Future<void> getCurrentAppThem() async {
+  void getCurrentAppTheme() async {
     themeChangeProvider.setDarkTheme =
         await themeChangeProvider.darkThemePrefs.getTheme();
   }
 
   @override
   void initState() {
-    getCurrentAppThem();
+    getCurrentAppTheme();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    // bool isDark = false;
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) {
@@ -54,11 +53,11 @@ class _MyAppState extends State<MyApp> {
       child:
           Consumer<DarkThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
             home: const BottomBarScreen(),
             routes: {
-              OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
             });
       }),
