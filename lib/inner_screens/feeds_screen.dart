@@ -6,6 +6,7 @@ import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class FeedsScreen extends StatefulWidget {
+  static const routeName = "/FeedsScreenState";
   const FeedsScreen({super.key});
 
   @override
