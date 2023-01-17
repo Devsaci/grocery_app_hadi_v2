@@ -54,6 +54,9 @@ class _FeedsScreenState extends State<FeedsScreen> {
           children: [
             TextField(
               controller: _searchTextController,
+              onChanged: (value) {
+                setState(() {});
+              },
             ),
             GridView.count(
               shrinkWrap: true,
