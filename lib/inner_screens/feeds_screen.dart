@@ -16,6 +16,13 @@ class FeedsScreen extends StatefulWidget {
 
 class _FeedsScreenState extends State<FeedsScreen> {
   final TextEditingController _searchTextController = TextEditingController();
+
+  @override
+  void dispose() {
+    _searchTextController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
