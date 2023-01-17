@@ -41,16 +41,19 @@ class _FeedsScreenState extends State<FeedsScreen> {
           isTitle: true,
         ),
       ),
-      body: Column(
-        children: [
-          GridView.count(
-            shrinkWrap: true,
-            crossAxisCount: 2,
-            children: List.generate(6, (index) {
-              return const FeedsWidget();
-            }),
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            GridView.count(
+              shrinkWrap: true,
+              childAspectRatio: size.width / (size.height * 0.59),
+              crossAxisCount: 2,
+              children: List.generate(6, (index) {
+                return const FeedsWidget();
+              }),
+            ),
+          ],
+        ),
       ),
     );
   }
