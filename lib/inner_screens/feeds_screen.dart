@@ -46,9 +46,10 @@ class _FeedsScreenState extends State<FeedsScreen> {
           children: [
             GridView.count(
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               childAspectRatio: size.width / (size.height * 0.59),
               crossAxisCount: 2,
-              children: List.generate(6, (index) {
+              children: List.generate(20, (index) {
                 return const FeedsWidget();
               }),
             ),
