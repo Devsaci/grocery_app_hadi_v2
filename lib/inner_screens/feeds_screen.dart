@@ -15,6 +15,7 @@ class FeedsScreen extends StatefulWidget {
 }
 
 class _FeedsScreenState extends State<FeedsScreen> {
+  final TextEditingController _searchTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
@@ -44,6 +45,9 @@ class _FeedsScreenState extends State<FeedsScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            TextField(
+              controller: _searchTextController,
+            ),
             GridView.count(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
