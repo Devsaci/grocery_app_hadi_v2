@@ -48,6 +48,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               childAspectRatio: size.width / (size.height * 0.59),
+              padding: EdgeInsets.zero,
               crossAxisCount: 2,
               children: List.generate(20, (index) {
                 return const FeedsWidget();
