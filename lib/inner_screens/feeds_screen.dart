@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/widgets/feed_items.dart';
 
 import '../services/utils.dart';
 import '../widgets/text_widget.dart';
@@ -43,9 +44,12 @@ class _FeedsScreenState extends State<FeedsScreen> {
       body: Column(
         children: [
           GridView.count(
+            shrinkWrap: true,
             crossAxisCount: 2,
-            children: [],
-          )
+            children: List.generate(6, (index) {
+              return const FeedsWidget();
+            }),
+          ),
         ],
       ),
     );
