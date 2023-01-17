@@ -40,6 +40,14 @@ class _FeedsScreenState extends State<FeedsScreen> {
           isTitle: true,
         ),
       ),
+      body: Column(
+        children: [
+          GridView.count(
+            crossAxisCount: 2,
+            children: [],
+          )
+        ],
+      ),
     );
   }
 }
