@@ -57,7 +57,13 @@ class _FeedsScreenState extends State<FeedsScreen> {
               onChanged: (value) {
                 setState(() {});
               },
-              decoration: InputDecoration(),
+              decoration: InputDecoration(
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide:
+                      const BorderSide(color: Colors.greenAccent, width: 1),
+                ),
+              ),
             ),
             GridView.count(
               shrinkWrap: true,
