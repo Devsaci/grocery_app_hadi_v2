@@ -20,6 +20,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
   @override
   void dispose() {
     _searchTextController.dispose();
+    _searchTextFocusNode.dispose();
     super.dispose();
   }
 
