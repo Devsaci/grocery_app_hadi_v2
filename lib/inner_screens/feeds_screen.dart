@@ -63,6 +63,11 @@ class _FeedsScreenState extends State<FeedsScreen> {
                   borderSide:
                       const BorderSide(color: Colors.greenAccent, width: 1),
                 ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide:
+                      const BorderSide(color: Colors.greenAccent, width: 1),
+                ),
               ),
             ),
             GridView.count(
