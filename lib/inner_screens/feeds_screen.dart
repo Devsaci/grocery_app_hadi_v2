@@ -74,6 +74,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.close,
+                    color: Colors.red,
                   ),
                 ),
               ),
