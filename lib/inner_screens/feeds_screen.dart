@@ -16,7 +16,7 @@ class FeedsScreen extends StatefulWidget {
 
 class _FeedsScreenState extends State<FeedsScreen> {
   final TextEditingController _searchTextController = TextEditingController();
-
+  final FocusNode _searchTextFocusNode = FocusNode();
   @override
   void dispose() {
     _searchTextController.dispose();
@@ -53,6 +53,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
         child: Column(
           children: [
             TextField(
+              focusNode: _searchTextFocusNode,
               controller: _searchTextController,
               onChanged: (value) {
                 setState(() {});
