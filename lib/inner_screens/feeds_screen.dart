@@ -68,6 +68,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
                   borderSide:
                       const BorderSide(color: Colors.greenAccent, width: 1),
                 ),
+                hintText: "What's in your mind",
               ),
             ),
             GridView.count(
