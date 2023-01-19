@@ -70,6 +70,12 @@ class _FeedsScreenState extends State<FeedsScreen> {
                 ),
                 hintText: "What's in your mind",
                 prefixIcon: const Icon(Icons.search),
+                suffix: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.close,
+                  ),
+                ),
               ),
             ),
             GridView.count(
