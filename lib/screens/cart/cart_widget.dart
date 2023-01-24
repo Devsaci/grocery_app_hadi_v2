@@ -17,8 +17,9 @@ class _MyWidgetState extends State<CartWidget> {
           Container(
             height: 100,
             width: 100,
-            // color: Colors.amber[100],
-            decoration: BoxDecoration(),
+            decoration: BoxDecoration(
+              color: Colors.amber[100],
+            ),
           )
         ],
       ),
