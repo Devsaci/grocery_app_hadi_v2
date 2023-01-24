@@ -13,7 +13,11 @@ class _MyWidgetState extends State<CartWidget> {
     return GestureDetector(
       onTap: () {},
       child: Row(
-        children: [],
+        children: [
+          Container(
+            color: Colors.amber[100],
+          )
+        ],
       ),
     );
   }
