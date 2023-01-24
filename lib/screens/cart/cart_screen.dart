@@ -7,8 +7,12 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: CartWidget(),
-    );
+    return Scaffold(
+        body: ListView.builder(
+      itemCount: 3,
+      itemBuilder: (ctx, index) {
+        return CartWidget();
+      },
+    ));
   }
 }
