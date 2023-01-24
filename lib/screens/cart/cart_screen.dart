@@ -9,9 +9,12 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView.builder(
-      itemCount: 3,
+      itemCount: 10,
       itemBuilder: (ctx, index) {
-        return CartWidget();
+        return const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: CartWidget(),
+        );
       },
     ));
   }
