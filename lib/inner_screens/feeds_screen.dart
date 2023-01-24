@@ -73,7 +73,9 @@ class _FeedsScreenState extends State<FeedsScreen> {
                 hintText: "What's in your mind",
                 prefixIcon: const Icon(Icons.search),
                 suffix: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    _searchTextController.clear();
+                  },
                   icon: Icon(
                     Icons.close,
                     color: _searchTextFocusNode.hasFocus ? Colors.red : color,
