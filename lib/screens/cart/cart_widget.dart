@@ -12,16 +12,19 @@ class _MyWidgetState extends State<CartWidget> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {},
-      child: Row(
-        children: [
-          Container(
-            height: 100,
-            width: 100,
-            decoration: BoxDecoration(
-              color: Theme.of(context).cardColor,
-            ),
-          )
-        ],
+      child: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                  color: Theme.of(context).cardColor,
+                  borderRadius: BorderRadius.circular(15)),
+            )
+          ],
+        ),
       ),
     );
   }
