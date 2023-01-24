@@ -10,6 +10,10 @@ class CartWidget extends StatefulWidget {
 class _MyWidgetState extends State<CartWidget> {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector();
+    return GestureDetector(
+      child: Row(
+        children: [],
+      ),
+    );
   }
 }
