@@ -11,6 +11,7 @@ class _MyWidgetState extends State<CartWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {},
       child: Row(
         children: [],
       ),
