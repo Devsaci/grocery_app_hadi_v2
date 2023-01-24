@@ -75,6 +75,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
                 suffix: IconButton(
                   onPressed: () {
                     _searchTextController.clear();
+                    _searchTextFocusNode.unfocus();
                   },
                   icon: Icon(
                     Icons.close,
