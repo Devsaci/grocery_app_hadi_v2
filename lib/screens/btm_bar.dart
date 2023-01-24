@@ -4,7 +4,8 @@ import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
-import 'cart.dart';
+
+import 'cart/cart_screen.dart';
 import 'categories.dart';
 import 'home_screen.dart';
 import 'user.dart';
