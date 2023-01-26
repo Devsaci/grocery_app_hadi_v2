@@ -4,10 +4,10 @@ class CartWidget extends StatefulWidget {
   const CartWidget({super.key});
 
   @override
-  State<CartWidget> createState() => _MyWidgetState();
+  State<CartWidget> createState() => _CartWidgetState();
 }
 
-class _MyWidgetState extends State<CartWidget> {
+class _CartWidgetState extends State<CartWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -16,13 +16,15 @@ class _MyWidgetState extends State<CartWidget> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                  //color: Theme.of(context).cardColor,
-                  color: Colors.amber.shade300,
-                  borderRadius: BorderRadius.circular(15)),
+            Expanded(
+              child: Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                    //color: Theme.of(context).cardColor,
+                    color: Colors.amber.shade300,
+                    borderRadius: BorderRadius.circular(15)),
+              ),
             )
           ],
         ),
