@@ -2,6 +2,7 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../services/utils.dart';
+import '../../widgets/text_widget.dart';
 
 class CartWidget extends StatefulWidget {
   const CartWidget({super.key});
@@ -17,27 +18,33 @@ class _CartWidgetState extends State<CartWidget> {
     Size size = Utils(context).getScreenSize;
     return GestureDetector(
       onTap: () {},
-      child: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Container(
-                height: size.width * 0.25,
-                width: size.width * 0.25,
-                decoration: BoxDecoration(
-                  //color: Theme.of(context).cardColor,
-                  color: Colors.amber.shade300,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: FancyShimmerImage(
-                  imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
-                  boxFit: BoxFit.fill,
-                ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: size.width * 0.25,
+            width: size.width * 0.25,
+            decoration: BoxDecoration(
+              //color: Theme.of(context).cardColor,
+              color: Colors.amber.shade300,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: FancyShimmerImage(
+              imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
+              boxFit: BoxFit.fill,
+            ),
+          ),
+          Column(
+            children: [
+              TextWidget(
+                text: 'Title',
+                color: color,
+                textSize: 20,
+                isTitle: true,
               ),
-            )
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     );
   }
