@@ -1,4 +1,7 @@
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+
+import '../../services/utils.dart';
 
 class CartWidget extends StatefulWidget {
   const CartWidget({super.key});
@@ -10,6 +13,8 @@ class CartWidget extends StatefulWidget {
 class _CartWidgetState extends State<CartWidget> {
   @override
   Widget build(BuildContext context) {
+    final Color color = Utils(context).color;
+    Size size = Utils(context).getScreenSize;
     return GestureDetector(
       onTap: () {},
       child: Center(
@@ -18,12 +23,17 @@ class _CartWidgetState extends State<CartWidget> {
           children: [
             Expanded(
               child: Container(
-                height: 100,
-                width: 100,
+                height: size.width * 0.25,
+                width: size.width * 0.25,
                 decoration: BoxDecoration(
-                    //color: Theme.of(context).cardColor,
-                    color: Colors.amber.shade300,
-                    borderRadius: BorderRadius.circular(15)),
+                  //color: Theme.of(context).cardColor,
+                  color: Colors.amber.shade300,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: FancyShimmerImage(
+                  imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
+                  boxFit: BoxFit.fill,
+                ),
               ),
             )
           ],
