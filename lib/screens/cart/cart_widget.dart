@@ -52,7 +52,10 @@ class _CartWidgetState extends State<CartWidget> {
                     child: Material(
                       color: Colors.amber,
                       borderRadius: BorderRadius.circular(15),
-                      child: InkWell(),
+                      child: InkWell(
+                        onTap: () {},
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                     ),
                   ),
                 ],
