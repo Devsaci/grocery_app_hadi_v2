@@ -91,7 +91,11 @@ class _CartWidgetState extends State<CartWidget> {
     );
   }
 
-  Widget _quantityController() {
+  Widget _quantityController({
+    required Function fct,
+    required IconData icon,
+    required Color color,
+  }) {
     return Flexible(
       flex: 2,
       child: Padding(
