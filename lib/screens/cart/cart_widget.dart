@@ -52,7 +52,7 @@ class _CartWidgetState extends State<CartWidget> {
                     child: InkWell(
                       onTap: () {},
                       borderRadius: BorderRadius.circular(15),
-                      child: Icon(Icons.plus_one),
+                      child: Icon(Icons.plus_one, color: Colors.white),
                     ),
                   ),
                 ],
