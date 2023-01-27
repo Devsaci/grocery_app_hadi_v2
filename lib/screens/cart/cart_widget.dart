@@ -43,9 +43,12 @@ class _CartWidgetState extends State<CartWidget> {
                 textSize: 20,
                 isTitle: true,
               ),
-              const SizedBox(
-                height: 16,
-              )
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  Material(),
+                ],
+              ),
             ],
           ),
         ],
