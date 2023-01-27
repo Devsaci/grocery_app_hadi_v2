@@ -26,7 +26,7 @@ class _CartWidgetState extends State<CartWidget> {
             width: size.width * 0.25,
             decoration: BoxDecoration(
               //color: Theme.of(context).cardColor,
-              color: Colors.amber.shade300,
+              color: Theme.of(context).cardColor.withOpacity(0.3),
               borderRadius: BorderRadius.circular(15),
             ),
             child: FancyShimmerImage(
@@ -47,16 +47,12 @@ class _CartWidgetState extends State<CartWidget> {
               Row(
                 children: [
                   Material(
-                    color: Colors.amber,
+                    color: color,
                     borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      color: Colors.amber,
-                      height: 15,
-                      width: 50,
-                      child: InkWell(
-                        onTap: () {},
-                        borderRadius: BorderRadius.circular(15),
-                      ),
+                    child: InkWell(
+                      onTap: () {},
+                      borderRadius: BorderRadius.circular(15),
+                      child: Icon(Icons.plus_one),
                     ),
                   ),
                 ],
