@@ -45,7 +45,7 @@ class _CartWidgetState extends State<CartWidget> {
               ),
               const SizedBox(height: 16),
               SizedBox(
-                width: 100,
+                width: size.width * 0.3,
                 child: Row(
                   children: [
                     Flexible(
