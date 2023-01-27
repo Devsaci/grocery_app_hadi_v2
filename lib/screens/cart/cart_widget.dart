@@ -44,27 +44,36 @@ class _CartWidgetState extends State<CartWidget> {
                 isTitle: true,
               ),
               const SizedBox(height: 16),
-              Row(
-                children: [
-                  Material(
-                    color: color,
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      onTap: () {},
-                      borderRadius: BorderRadius.circular(15),
-                      child: Icon(Icons.plus_one, color: Colors.white),
+              SizedBox(
+                width: 100,
+                child: Row(
+                  children: [
+                    Flexible(
+                      flex: 2,
+                      child: Material(
+                        color: color,
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {},
+                          borderRadius: BorderRadius.circular(15),
+                          child: Icon(Icons.plus_one, color: Colors.white),
+                        ),
+                      ),
                     ),
-                  ),
-                  Material(
-                    color: color,
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      onTap: () {},
-                      borderRadius: BorderRadius.circular(15),
-                      child: Icon(Icons.plus_one, color: Colors.white),
+                    Flexible(
+                      flex: 2,
+                      child: Material(
+                        color: color,
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {},
+                          borderRadius: BorderRadius.circular(15),
+                          child: Icon(Icons.plus_one, color: Colors.white),
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
