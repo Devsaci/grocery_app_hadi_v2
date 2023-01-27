@@ -55,6 +55,15 @@ class _CartWidgetState extends State<CartWidget> {
                       child: Icon(Icons.plus_one, color: Colors.white),
                     ),
                   ),
+                  Material(
+                    color: color,
+                    borderRadius: BorderRadius.circular(15),
+                    child: InkWell(
+                      onTap: () {},
+                      borderRadius: BorderRadius.circular(15),
+                      child: Icon(Icons.plus_one, color: Colors.white),
+                    ),
+                  ),
                 ],
               ),
             ],
