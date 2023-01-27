@@ -19,7 +19,7 @@ class _CartWidgetState extends State<CartWidget> {
     return GestureDetector(
       onTap: () {},
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        /// mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             height: size.width * 0.25,
@@ -35,6 +35,7 @@ class _CartWidgetState extends State<CartWidget> {
             ),
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextWidget(
                 text: 'Title',
@@ -42,6 +43,9 @@ class _CartWidgetState extends State<CartWidget> {
                 textSize: 20,
                 isTitle: true,
               ),
+              const SizedBox(
+                height: 16,
+              )
             ],
           ),
         ],
