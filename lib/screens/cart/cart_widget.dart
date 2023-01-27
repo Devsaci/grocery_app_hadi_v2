@@ -90,4 +90,8 @@ class _CartWidgetState extends State<CartWidget> {
       ),
     );
   }
+
+  Widget _quantityController() {
+    return const Text('Flexible');
+  }
 }
