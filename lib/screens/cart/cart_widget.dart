@@ -53,7 +53,7 @@ class _CartWidgetState extends State<CartWidget> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5),
                         child: Material(
-                          color: color,
+                          color: Colors.green,
                           borderRadius: BorderRadius.circular(15),
                           child: InkWell(
                             onTap: () {},
@@ -66,7 +66,7 @@ class _CartWidgetState extends State<CartWidget> {
                     Flexible(
                       flex: 2,
                       child: Material(
-                        color: color,
+                        color: Colors.red,
                         borderRadius: BorderRadius.circular(15),
                         child: InkWell(
                           onTap: () {},
