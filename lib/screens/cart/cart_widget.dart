@@ -46,7 +46,15 @@ class _CartWidgetState extends State<CartWidget> {
               const SizedBox(height: 16),
               Row(
                 children: [
-                  Material(),
+                  Container(
+                    height: 50,
+                    width: 100,
+                    child: Material(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(15),
+                      child: InkWell(),
+                    ),
+                  ),
                 ],
               ),
             ],
