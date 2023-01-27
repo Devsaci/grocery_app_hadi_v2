@@ -101,14 +101,16 @@ class _CartWidgetState extends State<CartWidget> {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 5),
         child: Material(
-          color: Colors.green,
+          color: color,
           borderRadius: BorderRadius.circular(15),
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              fct();
+            },
             borderRadius: BorderRadius.circular(15),
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.plus_one, color: Colors.white),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(icon, color: Colors.white),
             ),
           ),
         ),
