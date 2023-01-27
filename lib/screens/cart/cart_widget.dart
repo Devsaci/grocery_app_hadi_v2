@@ -92,6 +92,23 @@ class _CartWidgetState extends State<CartWidget> {
   }
 
   Widget _quantityController() {
-    return const Text('Flexible');
+    return Flexible(
+      flex: 2,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 5),
+        child: Material(
+          color: Colors.green,
+          borderRadius: BorderRadius.circular(15),
+          child: InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(15),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Icon(Icons.plus_one, color: Colors.white),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
