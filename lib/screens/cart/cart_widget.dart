@@ -1,4 +1,5 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../services/utils.dart';
@@ -48,39 +49,11 @@ class _CartWidgetState extends State<CartWidget> {
                 width: size.width * 0.3,
                 child: Row(
                   children: [
-                    Flexible(
-                      flex: 2,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 5),
-                        child: Material(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.circular(15),
-                          child: InkWell(
-                            onTap: () {},
-                            borderRadius: BorderRadius.circular(15),
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Icon(Icons.plus_one, color: Colors.white),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Flexible(
-                      flex: 2,
-                      child: Material(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
-                          onTap: () {},
-                          borderRadius: BorderRadius.circular(15),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Icon(Icons.plus_one, color: Colors.white),
-                          ),
-                        ),
-                      ),
-                    ),
+                    _quantityController(
+                      fct: () {},
+                      icon: CupertinoIcons.minus,
+                      color: Colors.red,
+                    )
                   ],
                 ),
               ),
