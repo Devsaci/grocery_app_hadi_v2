@@ -46,12 +46,13 @@ class _CartWidgetState extends State<CartWidget> {
               const SizedBox(height: 16),
               Row(
                 children: [
-                  Container(
-                    height: 50,
-                    width: 100,
-                    child: Material(
+                  Material(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
                       color: Colors.amber,
-                      borderRadius: BorderRadius.circular(15),
+                      height: 15,
+                      width: 50,
                       child: InkWell(
                         onTap: () {},
                         borderRadius: BorderRadius.circular(15),
