@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../services/utils.dart';
+import '../../widgets/heart_btn.dart';
 import '../../widgets/text_widget.dart';
 
 class CartWidget extends StatefulWidget {
@@ -118,7 +119,9 @@ class _CartWidgetState extends State<CartWidget> {
                     color: Colors.red,
                     size: 30,
                   ),
-                )
+                ),
+                const SizedBox(height: 5),
+                const HeartBTN(),
               ],
             ),
           )
