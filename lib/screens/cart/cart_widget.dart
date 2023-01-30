@@ -54,6 +54,7 @@ class _CartWidgetState extends State<CartWidget> {
                       icon: CupertinoIcons.minus,
                       color: Colors.red,
                     ),
+                    TextField(),
                     _quantityController(
                       fct: () {},
                       icon: CupertinoIcons.plus,
