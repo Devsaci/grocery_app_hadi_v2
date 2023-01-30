@@ -56,7 +56,7 @@ class _CartWidgetState extends State<CartWidget> {
                     ),
                     _quantityController(
                       fct: () {},
-                      icon: CupertinoIcons.minus,
+                      icon: CupertinoIcons.plus,
                       color: Colors.green,
                     )
                   ],
