@@ -67,6 +67,7 @@ class _CartWidgetState extends State<CartWidget> {
                       child: TextField(
                         controller: _quantityTextController,
                         keyboardType: TextInputType.number,
+                        maxLines: 1,
                       ),
                     ),
                     _quantityController(
