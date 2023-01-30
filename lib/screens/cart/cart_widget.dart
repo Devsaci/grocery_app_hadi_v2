@@ -87,7 +87,9 @@ class _CartWidgetState extends State<CartWidget> {
                         ],
                         onChanged: (value) {
                           setState(() {
-                            if (value.isEmpty) {}
+                            if (value.isEmpty) {
+                              _quantityTextController.text = '1';
+                            }
                           });
                         },
                       ),
