@@ -23,7 +23,7 @@ class _CartWidgetState extends State<CartWidget> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    _quantityTextController.dispose();
     super.dispose();
   }
 
