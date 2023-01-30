@@ -13,11 +13,11 @@ class CartWidget extends StatefulWidget {
 }
 
 class _CartWidgetState extends State<CartWidget> {
-  final _quantityTextController = TextEditingController(text: "1");
+  final _quantityTextController = TextEditingController();
 
   @override
   void initState() {
-    _quantityTextController.text = "";
+    _quantityTextController.text = "1";
     super.initState();
   }
 
