@@ -110,7 +110,8 @@ class _CartWidgetState extends State<CartWidget> {
           Column(
             children: [
               InkWell(
-                child: Icon(CupertinoIcons.cart_badge_minus),
+                onTap: () {},
+                child: const Icon(CupertinoIcons.cart_badge_minus),
               )
             ],
           )
