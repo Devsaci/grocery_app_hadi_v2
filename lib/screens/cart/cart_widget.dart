@@ -86,7 +86,9 @@ class _CartWidgetState extends State<CartWidget> {
                           )
                         ],
                         onChanged: (value) {
-                          setState(() {});
+                          setState(() {
+                            if (value.isEmpty) {}
+                          });
                         },
                       ),
                     ),
