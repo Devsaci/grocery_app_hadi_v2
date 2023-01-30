@@ -13,6 +13,7 @@ class CartWidget extends StatefulWidget {
 }
 
 class _CartWidgetState extends State<CartWidget> {
+  final _quantityTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
@@ -54,7 +55,9 @@ class _CartWidgetState extends State<CartWidget> {
                       icon: CupertinoIcons.minus,
                       color: Colors.red,
                     ),
-                    TextField(),
+                    TextField(
+                      controller: _quantityTextController,
+                    ),
                     _quantityController(
                       fct: () {},
                       icon: CupertinoIcons.plus,
