@@ -107,6 +107,13 @@ class _CartWidgetState extends State<CartWidget> {
             ],
           ),
           const Spacer(),
+          Column(
+            children: [
+              InkWell(
+                child: Icon(CupertinoIcons.cart_badge_minus),
+              )
+            ],
+          )
         ],
       ),
     );
