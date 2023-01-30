@@ -106,6 +106,7 @@ class _CartWidgetState extends State<CartWidget> {
               ),
             ],
           ),
+          const Spacer(),
         ],
       ),
     );
