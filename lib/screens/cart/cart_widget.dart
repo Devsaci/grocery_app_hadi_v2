@@ -85,7 +85,9 @@ class _CartWidgetState extends State<CartWidget> {
                             RegExp('[0-9]'),
                           )
                         ],
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          setState(() {});
+                        },
                       ),
                     ),
                     _quantityController(
