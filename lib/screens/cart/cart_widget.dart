@@ -1,6 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
@@ -79,7 +80,11 @@ class _CartWidgetState extends State<CartWidget> {
                             borderSide: BorderSide(),
                           ),
                         ),
-                        inputFormatters: [],
+                        inputFormatters: [
+                          FilteringTextInputFormatter.allow(
+                            RegExp('[0-9]'),
+                          )
+                        ],
                       ),
                     ),
                     _quantityController(
