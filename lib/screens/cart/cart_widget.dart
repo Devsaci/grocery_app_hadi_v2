@@ -17,7 +17,7 @@ class _CartWidgetState extends State<CartWidget> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    _quantityTextController.text;
     super.initState();
   }
 
