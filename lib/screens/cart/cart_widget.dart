@@ -79,6 +79,7 @@ class _CartWidgetState extends State<CartWidget> {
                             borderSide: BorderSide(),
                           ),
                         ),
+                        inputFormatters: [],
                       ),
                     ),
                     _quantityController(
