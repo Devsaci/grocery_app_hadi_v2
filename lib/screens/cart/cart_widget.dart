@@ -62,8 +62,12 @@ class _CartWidgetState extends State<CartWidget> {
                       icon: CupertinoIcons.minus,
                       color: Colors.red,
                     ),
-                    TextField(
-                      controller: _quantityTextController,
+                    Flexible(
+                      flex: 1,
+                      child: TextField(
+                        controller: _quantityTextController,
+                        keyboardType: TextInputType.number,
+                      ),
                     ),
                     _quantityController(
                       fct: () {},
