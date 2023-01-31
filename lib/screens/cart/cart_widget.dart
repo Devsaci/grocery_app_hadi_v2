@@ -122,6 +122,12 @@ class _CartWidgetState extends State<CartWidget> {
                 ),
                 const SizedBox(height: 5),
                 const HeartBTN(),
+                TextWidget(
+                  text: '\$0.29',
+                  color: color,
+                  textSize: 18,
+                  maxLines: 1,
+                ),
               ],
             ),
           )
