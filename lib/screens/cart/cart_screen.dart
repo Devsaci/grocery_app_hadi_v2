@@ -23,7 +23,7 @@ class CartScreen extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: const Icon(IconlyBold.delete),
+              icon: const Icon(IconlyBroken.delete),
               color: color,
             ),
           ],
