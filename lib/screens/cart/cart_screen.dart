@@ -32,8 +32,8 @@ class CartScreen extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Container(
-              color: Colors.amber,
+            SizedBox(
+              //color: color,
               width: double.infinity,
               height: size.height * 0.1,
               child: Padding(
