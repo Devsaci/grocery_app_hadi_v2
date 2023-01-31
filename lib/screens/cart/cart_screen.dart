@@ -37,7 +37,9 @@ class CartScreen extends StatelessWidget {
               width: double.infinity,
               height: size.height * 0.1,
               child: Row(
-                children: [],
+                children: [
+                  Material(),
+                ],
               ),
             ),
             Expanded(
