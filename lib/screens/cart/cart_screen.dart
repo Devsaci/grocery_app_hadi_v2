@@ -14,11 +14,17 @@ class CartScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     return Scaffold(
         appBar: AppBar(
-          title: TextWidget(text: 'Cart (2)', color: color, textSize: 22),
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          title: TextWidget(
+            text: 'Cart (2)',
+            color: color,
+            textSize: 22,
+          ),
           actions: [
             IconButton(
               onPressed: () {},
               icon: const Icon(IconlyBold.delete),
+              color: color,
             ),
           ],
         ),
