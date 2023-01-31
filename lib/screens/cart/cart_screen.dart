@@ -32,6 +32,7 @@ class CartScreen extends StatelessWidget {
         ),
         body: Column(
           children: [
+            Container(),
             Expanded(
               child: ListView.builder(
                 itemCount: 10,
