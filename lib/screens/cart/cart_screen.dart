@@ -44,6 +44,8 @@ class CartScreen extends StatelessWidget {
                     child: InkWell(
                       borderRadius: BorderRadius.circular(10),
                       onTap: () {},
+                      child: TextWidget(
+                          text: 'Order Now', color: color, textSize: 20),
                     ),
                   ),
                 ],
