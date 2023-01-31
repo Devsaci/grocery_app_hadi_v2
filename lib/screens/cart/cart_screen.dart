@@ -14,6 +14,7 @@ class CartScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     return Scaffold(
         appBar: AppBar(
+          elevation: 0,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           title: TextWidget(
             text: 'Cart (2)',
