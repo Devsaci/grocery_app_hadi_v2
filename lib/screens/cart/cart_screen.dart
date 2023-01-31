@@ -36,19 +36,24 @@ class CartScreen extends StatelessWidget {
               color: Colors.amber,
               width: double.infinity,
               height: size.height * 0.1,
-              child: Row(
-                children: [
-                  Material(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(10),
-                    child: InkWell(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Material(
+                      color: Colors.green,
                       borderRadius: BorderRadius.circular(10),
-                      onTap: () {},
-                      child: TextWidget(
-                          text: 'Order Now', color: Colors.white, textSize: 20),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(10),
+                        onTap: () {},
+                        child: TextWidget(
+                            text: 'Order Now',
+                            color: Colors.white,
+                            textSize: 20),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Expanded(
