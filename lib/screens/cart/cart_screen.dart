@@ -19,6 +19,7 @@ class CartScreen extends StatelessWidget {
           title: TextWidget(
             text: 'Cart (2)',
             color: color,
+            isTitle: true,
             textSize: 22,
           ),
           actions: [
