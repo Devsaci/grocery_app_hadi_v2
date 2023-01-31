@@ -33,7 +33,9 @@ class CartScreen extends StatelessWidget {
         body: Column(
           children: [
             Container(
+              color: Colors.amber,
               width: double.infinity,
+              height: size.height * 0.1,
             ),
             Expanded(
               child: ListView.builder(
