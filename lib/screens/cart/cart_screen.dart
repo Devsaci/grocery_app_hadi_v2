@@ -17,11 +17,7 @@ class CartScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: TextWidget(
-          text: 'Cart (2)',
-          color: color,
-          isTitle: true,
-          textSize: 22,
-        ),
+            text: 'Cart (2)', color: color, isTitle: true, textSize: 22),
         actions: [
           IconButton(
             onPressed: () {},
@@ -32,28 +28,7 @@ class CartScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          SizedBox(
-            //color: color,
-            width: double.infinity,
-            height: size.height * 0.1,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Material(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(10),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(10),
-                      onTap: () {},
-                      child: TextWidget(
-                          text: 'Order Now', color: Colors.white, textSize: 20),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          _checkout(ctx: context),
           Expanded(
             child: ListView.builder(
               itemCount: 10,
@@ -70,7 +45,30 @@ class CartScreen extends StatelessWidget {
     );
   }
 
-  Widget _checkout() {
-    return Text('SizedBox');
+  Widget _checkout({required BuildContext ctx}) {
+    final Color color = Utils(ctx).color;
+    Size size = Utils(ctx).getScreenSize;
+    return SizedBox(
+      //color: color,
+      width: double.infinity,
+      height: size.height * 0.1,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          children: [
+            Material(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(10),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {},
+                child: TextWidget(
+                    text: 'Order Now', color: Colors.white, textSize: 20),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
