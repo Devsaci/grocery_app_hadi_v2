@@ -36,101 +36,114 @@ class _CartWidgetState extends State<CartWidget> {
     return GestureDetector(
       onTap: () {},
       child: Row(
-        /// mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            height: size.width * 0.25,
-            width: size.width * 0.25,
-            decoration: BoxDecoration(
-              //color: Theme.of(context).cardColor,
-              color: Theme.of(context).cardColor.withOpacity(0.3),
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: FancyShimmerImage(
-              imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
-              boxFit: BoxFit.fill,
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              TextWidget(
-                text: 'Title',
-                color: color,
-                textSize: 20,
-                isTitle: true,
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: size.width * 0.3,
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).backgroundColor,
+                  borderRadius: BorderRadius.circular(12),
+                ),
                 child: Row(
                   children: [
-                    _quantityController(
-                      fct: () {},
-                      icon: CupertinoIcons.minus,
-                      color: Colors.red,
-                    ),
-                    Flexible(
-                      flex: 1,
-                      child: TextField(
-                        controller: _quantityTextController,
-                        keyboardType: TextInputType.number,
-                        maxLines: 1,
-                        decoration: const InputDecoration(
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(),
-                          ),
-                        ),
-                        inputFormatters: [
-                          FilteringTextInputFormatter.allow(
-                            RegExp('[0-9]'),
-                          )
-                        ],
-                        onChanged: (value) {
-                          setState(() {
-                            if (value.isEmpty) {
-                              _quantityTextController.text = '1';
-                            } else {
-                              return;
-                            }
-                          });
-                        },
+                    Container(
+                      height: size.width * 0.25,
+                      width: size.width * 0.25,
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).cardColor.withOpacity(0.3),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: FancyShimmerImage(
+                        imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
+                        boxFit: BoxFit.fill,
                       ),
                     ),
-                    _quantityController(
-                      fct: () {},
-                      icon: CupertinoIcons.plus,
-                      color: Colors.green,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        TextWidget(
+                          text: 'Title',
+                          color: color,
+                          textSize: 20,
+                          isTitle: true,
+                        ),
+                        const SizedBox(height: 16),
+                        SizedBox(
+                          width: size.width * 0.3,
+                          child: Row(
+                            children: [
+                              _quantityController(
+                                fct: () {},
+                                icon: CupertinoIcons.minus,
+                                color: Colors.red,
+                              ),
+                              Flexible(
+                                flex: 1,
+                                child: TextField(
+                                  controller: _quantityTextController,
+                                  keyboardType: TextInputType.number,
+                                  maxLines: 1,
+                                  decoration: const InputDecoration(
+                                    focusedBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(),
+                                    ),
+                                  ),
+                                  inputFormatters: [
+                                    FilteringTextInputFormatter.allow(
+                                      RegExp('[0-9]'),
+                                    )
+                                  ],
+                                  onChanged: (value) {
+                                    setState(() {
+                                      if (value.isEmpty) {
+                                        _quantityTextController.text = '1';
+                                      } else {
+                                        return;
+                                      }
+                                    });
+                                  },
+                                ),
+                              ),
+                              _quantityController(
+                                fct: () {},
+                                icon: CupertinoIcons.plus,
+                                color: Colors.green,
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Column(
+                        children: [
+                          InkWell(
+                            onTap: () {},
+                            child: const Icon(
+                              CupertinoIcons.cart_badge_minus,
+                              color: Colors.red,
+                              size: 30,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          const HeartBTN(),
+                          TextWidget(
+                            text: '\$0.29',
+                            color: color,
+                            textSize: 18,
+                            maxLines: 1,
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 ),
               ),
-            ],
-          ),
-          const Spacer(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Column(
-              children: [
-                InkWell(
-                  onTap: () {},
-                  child: const Icon(
-                    CupertinoIcons.cart_badge_minus,
-                    color: Colors.red,
-                    size: 30,
-                  ),
-                ),
-                const SizedBox(height: 5),
-                const HeartBTN(),
-                TextWidget(
-                  text: '\$0.29',
-                  color: color,
-                  textSize: 18,
-                  maxLines: 1,
-                ),
-              ],
             ),
-          )
+          ),
         ],
       ),
     );
