@@ -13,61 +13,64 @@ class CartScreen extends StatelessWidget {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
     return Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-          title: TextWidget(
-            text: 'Cart (2)',
-            color: color,
-            isTitle: true,
-            textSize: 22,
-          ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(IconlyBroken.delete),
-              color: color,
-            ),
-          ],
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        title: TextWidget(
+          text: 'Cart (2)',
+          color: color,
+          isTitle: true,
+          textSize: 22,
         ),
-        body: Column(
-          children: [
-            SizedBox(
-              //color: color,
-              width: double.infinity,
-              height: size.height * 0.1,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Material(
-                      color: Colors.green,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(IconlyBroken.delete),
+            color: color,
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          SizedBox(
+            //color: color,
+            width: double.infinity,
+            height: size.height * 0.1,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Material(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(10),
+                    child: InkWell(
                       borderRadius: BorderRadius.circular(10),
-                      child: InkWell(
-                        borderRadius: BorderRadius.circular(10),
-                        onTap: () {},
-                        child: TextWidget(
-                            text: 'Order Now',
-                            color: Colors.white,
-                            textSize: 20),
-                      ),
+                      onTap: () {},
+                      child: TextWidget(
+                          text: 'Order Now', color: Colors.white, textSize: 20),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (ctx, index) {
-                  return const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: CartWidget(),
-                  );
-                },
-              ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (ctx, index) {
+                return const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: CartWidget(),
+                );
+              },
             ),
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _checkout() {
+    return Text('SizedBox');
   }
 }
