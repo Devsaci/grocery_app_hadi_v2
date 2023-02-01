@@ -83,7 +83,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                       child: Row(
                         children: [
                           Flexible(
-                            flex: 1,
+                            flex: 3,
                             child: FittedBox(
                               child: TextWidget(
                                 text: 'KG',
