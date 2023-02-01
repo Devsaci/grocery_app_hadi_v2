@@ -66,6 +66,7 @@ class CartScreen extends StatelessWidget {
                     text: 'Order Now', color: Colors.white, textSize: 20),
               ),
             ),
+            const Spacer(),
             TextWidget(
               text: 'Total: \$0.259',
               color: color,
