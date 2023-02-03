@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -202,8 +203,10 @@ class _UserScreenState extends State<UserScreen> {
             title: const Text('Update'),
             content: TextField(
               onChanged: (value) {
-                print(
-                    '_addressTextController.text ${_addressTextController.text}');
+                if (kDebugMode) {
+                  print(
+                      '_addressTextController.text ${_addressTextController.text}');
+                }
               },
               controller: _addressTextController,
               maxLines: 5,

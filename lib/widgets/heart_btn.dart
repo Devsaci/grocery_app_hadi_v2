@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
@@ -10,7 +11,9 @@ class HeartBTN extends StatelessWidget {
     final Color color = Utils(context).color;
     return GestureDetector(
       onTap: () {
-        print('print heart button is pressed');
+        if (kDebugMode) {
+          print('print heart button is pressed');
+        }
       },
       child: Icon(
         IconlyLight.heart,
