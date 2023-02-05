@@ -3,10 +3,10 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/heart_btn.dart';
-import 'package:grocery_app_hadi_v1/widgets/price_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../services/utils.dart';
+import '../../widgets/heart_btn.dart';
+import '../../widgets/price_widget.dart';
+import '.././widgets/text_widget.dart';
 
 class OnSaleWidget extends StatefulWidget {
   const OnSaleWidget({Key? key}) : super(key: key);
