@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
+import '../../widgets/text_widget.dart';
 import 'cart_widget.dart';
 
 class CartScreen extends StatelessWidget {

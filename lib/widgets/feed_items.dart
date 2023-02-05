@@ -3,10 +3,12 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/heart_btn.dart';
-import 'package:grocery_app_hadi_v1/widgets/price_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../inner_screens/product_details.dart';
+import '../../services/global_methods.dart';
+import '../../services/utils.dart';
+import '../../widgets/heart_btn.dart';
+import '../../widgets/price_widget.dart';
+import '../../widgets/text_widget.dart';
 
 class FeedsWidget extends StatefulWidget {
   const FeedsWidget({super.key});
@@ -40,7 +42,10 @@ class _FeedsWidgetState extends State<FeedsWidget> {
         borderRadius: BorderRadius.circular(12),
         color: Theme.of(context).cardColor,
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            GlobalMethods.navigateTo(
+                ctx: context, routeName: ProductDetails.routeName);
+          },
           borderRadius: BorderRadius.circular(12),
           child: Column(
             children: [

@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
-              ProductDetails.routeName: (ctx) => const ProductDetails(),
+              ProductDetails.routeName: (ctx) => const ProductDetails()
             });
       }),
     );
