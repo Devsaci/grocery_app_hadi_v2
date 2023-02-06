@@ -37,6 +37,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           FancyShimmerImage(
             imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
             boxFit: BoxFit.scaleDown,
+            width: size.width,
           ),
         ],
       ),
