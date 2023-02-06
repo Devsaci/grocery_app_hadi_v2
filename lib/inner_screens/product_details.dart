@@ -57,6 +57,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TextWidget(
                         text: 'title',
