@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
+import '../services/utils.dart';
+
 class ProductDetails extends StatefulWidget {
   static const routeName = '/ProductDetails';
   const ProductDetails({super.key});
@@ -12,10 +14,15 @@ class ProductDetails extends StatefulWidget {
 class _ProductDetailsState extends State<ProductDetails> {
   @override
   Widget build(BuildContext context) {
+    Size size = Utils(context).getScreenSize;
+    final Color color = Utils(context).color;
     return Scaffold(
       appBar: AppBar(
-        leading: const InkWell(
-          child: Icon(IconlyLight.arrowLeft2),
+        leading: InkWell(
+          child: Icon(
+            IconlyLight.arrowLeft2,
+            color: color,
+          ),
         ),
       ),
       body: Center(
