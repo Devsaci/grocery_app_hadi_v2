@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../services/utils.dart';
+import '../../widgets/text_widget.dart';
 
 class PriceWidget extends StatelessWidget {
   const PriceWidget({
