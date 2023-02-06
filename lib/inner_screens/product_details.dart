@@ -22,6 +22,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           child: Icon(
             IconlyLight.arrowLeft2,
             color: color,
+            size: 24,
           ),
         ),
       ),
