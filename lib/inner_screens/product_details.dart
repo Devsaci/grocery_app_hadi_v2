@@ -34,10 +34,25 @@ class _ProductDetailsState extends State<ProductDetails> {
       ),
       body: Column(
         children: [
-          FancyShimmerImage(
-            imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
-            boxFit: BoxFit.scaleDown,
-            width: size.width,
+          Flexible(
+            flex: 3,
+            child: FancyShimmerImage(
+              imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+              boxFit: BoxFit.scaleDown,
+              width: size.width,
+            ),
+          ),
+          Flexible(
+            flex: 3,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).scaffoldBackgroundColor,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+              ),
+            ),
           ),
         ],
       ),
