@@ -28,6 +28,8 @@ class _ProductDetailsState extends State<ProductDetails> {
             size: 24,
           ),
         ),
+        elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       body: Center(
         child: Text('ProductDetails'),
