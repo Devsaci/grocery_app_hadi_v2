@@ -20,6 +20,8 @@ class _ProductDetailsState extends State<ProductDetails> {
       appBar: AppBar(
         leading: InkWell(
           borderRadius: BorderRadius.circular(12),
+          onTap: () =>
+              Navigator.canPop(context) ? Navigator.pop(context) : null,
           child: Icon(
             IconlyLight.arrowLeft2,
             color: color,
