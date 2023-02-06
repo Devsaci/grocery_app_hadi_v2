@@ -50,19 +50,21 @@ class _MyAppState extends State<MyApp> {
           return themeChangeProvider;
         })
       ],
-      child:
-          Consumer<DarkThemeProvider>(builder: (context, themeProvider, child) {
-        return MaterialApp(
+      child: Consumer<DarkThemeProvider>(
+        builder: (context, themeProvider, child) {
+          return MaterialApp(
             debugShowCheckedModeBanner: true,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const BottomBarScreen(),
+            home: ProductDetails(),
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
               ProductDetails.routeName: (ctx) => const ProductDetails()
-            });
-      }),
+            },
+          );
+        },
+      ),
     );
   }
 }
