@@ -19,6 +19,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(
+          borderRadius: BorderRadius.circular(12),
           child: Icon(
             IconlyLight.arrowLeft2,
             color: color,
