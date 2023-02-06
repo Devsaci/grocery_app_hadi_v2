@@ -2,6 +2,8 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:grocery_app_hadi_v1/inner_screens/product_details.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
 import '../../services/utils.dart';
 import '../../widgets/heart_btn.dart';
@@ -34,7 +36,10 @@ class _CartWidgetState extends State<CartWidget> {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        GlobalMethods.navigateTo(
+            ctx: context, routeName: ProductDetails.routeName);
+      },
       child: Row(
         children: [
           Expanded(
