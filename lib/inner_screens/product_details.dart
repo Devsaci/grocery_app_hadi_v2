@@ -1,3 +1,4 @@
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
@@ -32,7 +33,11 @@ class _ProductDetailsState extends State<ProductDetails> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       body: Column(
-        children: [],
+        children: [
+          FancyShimmerImage(
+            imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+          ),
+        ],
       ),
     );
   }
