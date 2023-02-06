@@ -56,17 +56,21 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      TextWidget(
-                        text: 'title',
-                        color: color,
-                        textSize: 25,
-                        isTitle: true,
-                      ),
-                      const HeartBTN(),
-                    ],
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 20, left: 30, right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        TextWidget(
+                          text: 'title',
+                          color: color,
+                          textSize: 25,
+                          isTitle: true,
+                        ),
+                        const HeartBTN(),
+                      ],
+                    ),
                   )
                 ],
               ),
