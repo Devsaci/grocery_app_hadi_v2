@@ -1,8 +1,10 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../services/utils.dart';
+import '../widgets/heart_btn.dart';
 
 class ProductDetails extends StatefulWidget {
   static const routeName = '/ProductDetails';
@@ -52,7 +54,21 @@ class _ProductDetailsState extends State<ProductDetails> {
                   topRight: Radius.circular(40),
                 ),
               ),
-              child: Column(children: []),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      TextWidget(
+                        text: 'title',
+                        color: color,
+                        textSize: 25,
+                        isTitle: true,
+                      ),
+                      const HeartBTN(),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
