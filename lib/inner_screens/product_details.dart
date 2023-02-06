@@ -31,8 +31,8 @@ class _ProductDetailsState extends State<ProductDetails> {
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
-      body: Center(
-        child: Text('ProductDetails'),
+      body: Column(
+        children: [],
       ),
     );
   }
