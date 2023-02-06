@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 
 class ProductDetails extends StatefulWidget {
   static const routeName = '/ProductDetails';
@@ -13,7 +14,9 @@ class _ProductDetailsState extends State<ProductDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: InkWell(),
+        leading: const InkWell(
+          child: Icon(IconlyLight.arrowLeft2),
+        ),
       ),
       body: Center(
         child: Text('ProductDetails'),
