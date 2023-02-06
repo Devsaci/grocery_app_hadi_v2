@@ -12,7 +12,9 @@ class _ProductDetailsState extends State<ProductDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: InkWell(),
+      ),
       body: Center(
         child: Text('ProductDetails'),
       ),
