@@ -83,7 +83,6 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ],
                     ),
                   ),
-                  // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                   Padding(
                     padding:
                         const EdgeInsets.only(top: 30, left: 13, right: 13),
@@ -134,7 +133,6 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ],
                     ),
                   ),
-
                   const SizedBox(height: 30),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -144,6 +142,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         color: Colors.red,
                         icon: CupertinoIcons.minus,
                       ),
+                      const SizedBox(width: 10),
                       Flexible(
                         flex: 1,
                         child: TextField(
@@ -163,6 +162,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           onChanged: (value) {},
                         ),
                       ),
+                      const SizedBox(width: 10),
                       quantityControl(
                         fct: () {},
                         color: Colors.green,
