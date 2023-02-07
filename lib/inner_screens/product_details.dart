@@ -80,7 +80,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                         color: color,
                         textSize: 22,
                         isTitle: true,
-                      )
+                      ),
+                      TextWidget(
+                        text: '/Kg',
+                        color: color,
+                        textSize: 12,
+                        isTitle: false,
+                      ),
                     ],
                   ),
                 ],
