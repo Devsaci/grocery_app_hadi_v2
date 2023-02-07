@@ -71,7 +71,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                         const HeartBTN(),
                       ],
                     ),
-                  )
+                  ),
+                  // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                 ],
               ),
             ),
