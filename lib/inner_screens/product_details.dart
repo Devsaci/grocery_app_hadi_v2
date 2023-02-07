@@ -17,6 +17,12 @@ class ProductDetails extends StatefulWidget {
 
 class _ProductDetailsState extends State<ProductDetails> {
   final _quantityTextController = TextEditingController(text: '1');
+  @override
+  void dispose() {
+    // Clean up the controller when the widget is disposed.
+  _quantityTextController.dispose()
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
