@@ -102,12 +102,18 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                       const Spacer(),
                       Container(
-                        color: Colors.green.shade400,
-                        child: TextWidget(
-                          text: 'Free delivery',
-                          color: Colors.white,
-                          textSize: 20,
-                          isTitle: true,
+                        decoration: BoxDecoration(
+                            color: Colors.green.shade600,
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 4, horizontal: 5),
+                          child: TextWidget(
+                            text: 'Free delivery',
+                            color: Colors.white,
+                            textSize: 20,
+                            isTitle: true,
+                          ),
                         ),
                       )
                     ],
