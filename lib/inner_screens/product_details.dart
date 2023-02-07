@@ -77,7 +77,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 30, left: 15, right: 15),
+                        const EdgeInsets.only(top: 30, left: 13, right: 13),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -91,14 +91,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                         TextWidget(
                           text: '/Kg',
                           color: color,
-                          textSize: 12,
+                          textSize: 15,
                           isTitle: false,
                         ),
                         const SizedBox(width: 10),
                         Visibility(
                           visible: true,
                           child: Text(
-                            '\$3.9',
+                            '\$ 3.9',
                             style: TextStyle(
                               fontSize: 18,
                               color: color,
