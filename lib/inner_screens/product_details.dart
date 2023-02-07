@@ -89,12 +89,15 @@ class _ProductDetailsState extends State<ProductDetails> {
                         textSize: 12,
                         isTitle: false,
                       ),
-                      Text(
-                        '\$3.9',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: color,
-                          decoration: TextDecoration.lineThrough,
+                      Visibility(
+                        visible: true,
+                        child: Text(
+                          '\$3.9',
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: color,
+                            decoration: TextDecoration.lineThrough,
+                          ),
                         ),
                       ),
                       const Spacer(),
