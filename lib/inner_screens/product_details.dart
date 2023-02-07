@@ -75,48 +75,54 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                   ),
                   // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
-                  Row(
-                    children: [
-                      TextWidget(
-                        text: '\$2.59',
-                        color: color,
-                        textSize: 22,
-                        isTitle: true,
-                      ),
-                      TextWidget(
-                        text: '/Kg',
-                        color: color,
-                        textSize: 12,
-                        isTitle: false,
-                      ),
-                      Visibility(
-                        visible: true,
-                        child: Text(
-                          '\$3.9',
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: color,
-                            decoration: TextDecoration.lineThrough,
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 20, left: 30, right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        TextWidget(
+                          text: '\$2.59',
+                          color: color,
+                          textSize: 22,
+                          isTitle: true,
+                        ),
+                        TextWidget(
+                          text: '/Kg',
+                          color: color,
+                          textSize: 12,
+                          isTitle: false,
+                        ),
+                        Visibility(
+                          visible: true,
+                          child: Text(
+                            '\$3.9',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: color,
+                              decoration: TextDecoration.lineThrough,
+                            ),
                           ),
                         ),
-                      ),
-                      const Spacer(),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: Colors.green.shade600,
-                            borderRadius: BorderRadius.circular(5)),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 4, horizontal: 5),
-                          child: TextWidget(
-                            text: 'Free delivery',
-                            color: Colors.white,
-                            textSize: 20,
-                            isTitle: true,
+                        const Spacer(),
+                        Container(
+                          decoration: BoxDecoration(
+                              color: Colors.green.shade600,
+                              borderRadius: BorderRadius.circular(5)),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 4, horizontal: 5),
+                            child: TextWidget(
+                              text: 'Free delivery',
+                              color: Colors.white,
+                              textSize: 20,
+                              isTitle: true,
+                            ),
                           ),
-                        ),
-                      )
-                    ],
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
