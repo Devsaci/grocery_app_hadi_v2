@@ -48,7 +48,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             flex: 3,
             child: Container(
               decoration: BoxDecoration(
-                color: Theme.of(context).cardColor,
+                color: Theme.of(context).primaryColorLight,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
