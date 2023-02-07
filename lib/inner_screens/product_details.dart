@@ -131,22 +131,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Material(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Colors.red,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: InkWell(
-                            //borderRadius: BorderRadius.circular(12),
-                            onTap: () {},
-                            child: const Icon(
-                              CupertinoIcons.minus,
-                              color: Colors.white,
-                              size: 45,
-                            ),
-                          ),
-                        ),
-                      ),
+                      quantityControl(),
                     ],
                   )
                 ],
@@ -154,6 +139,25 @@ class _ProductDetailsState extends State<ProductDetails> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Material quantityControl() {
+    return Material(
+      borderRadius: BorderRadius.circular(12),
+      color: Colors.red,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: InkWell(
+          //borderRadius: BorderRadius.circular(12),
+          onTap: () {},
+          child: const Icon(
+            CupertinoIcons.minus,
+            color: Colors.white,
+            size: 45,
+          ),
+        ),
       ),
     );
   }
