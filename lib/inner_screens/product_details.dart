@@ -113,7 +113,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               borderRadius: BorderRadius.circular(5)),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                                vertical: 4, horizontal: 5),
+                                vertical: 4, horizontal: 8),
                             child: TextWidget(
                               text: 'Free delivery',
                               color: Colors.white,
