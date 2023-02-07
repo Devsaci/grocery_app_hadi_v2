@@ -16,6 +16,8 @@ class ProductDetails extends StatefulWidget {
 }
 
 class _ProductDetailsState extends State<ProductDetails> {
+  final _quantityTextController = TextEditingController(text: '1');
+
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
@@ -138,7 +140,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                       Flexible(
                         flex: 1,
-                        child: TextField(),
+                        child: TextField(
+                          controller: _quantityTextController,
+                        ),
                       ),
                       quantityControl(
                         fct: () {},
