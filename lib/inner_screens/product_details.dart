@@ -2,7 +2,7 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../widgets/text_widget.dart';
 
 import '../services/utils.dart';
 import '../widgets/heart_btn.dart';
@@ -131,7 +131,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      quantityControl(),
+                      quantityControl(
+                        fct: () {},
+                        color: Colors.red,
+                        icon: CupertinoIcons.minus,
+                      ),
+                      quantityControl(
+                        fct: () {},
+                        color: Colors.green,
+                        icon: CupertinoIcons.plus,
+                      ),
                     ],
                   )
                 ],
@@ -143,19 +152,24 @@ class _ProductDetailsState extends State<ProductDetails> {
     );
   }
 
-  Material quantityControl() {
+  Material quantityControl({
+    required Function fct,
+    required IconData icon,
+    required Color color,
+  }) {
     return Material(
       borderRadius: BorderRadius.circular(12),
-      color: Colors.red,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          //borderRadius: BorderRadius.circular(12),
-          onTap: () {},
-          child: const Icon(
-            CupertinoIcons.minus,
+      color: color,
+      child: InkWell(
+        onTap: () {
+          fct;
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon(
+            icon,
             color: Colors.white,
-            size: 45,
+            size: 35,
           ),
         ),
       ),
