@@ -48,13 +48,15 @@ class _ProductDetailsState extends State<ProductDetails> {
             flex: 4,
             child: Container(
               decoration: BoxDecoration(
-                color: Theme.of(context).primaryColorLight,
+                //color: Theme.of(context).cardColor,
+                color: Colors.amber.shade100,
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
                 ),
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding:
