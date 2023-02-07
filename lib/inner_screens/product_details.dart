@@ -84,7 +84,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         TextWidget(
                           text: '\$2.59',
-                          color: color,
+                          color: Colors.green,
                           textSize: 22,
                           isTitle: true,
                         ),
@@ -94,6 +94,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           textSize: 12,
                           isTitle: false,
                         ),
+                        const SizedBox(width: 10),
                         Visibility(
                           visible: true,
                           child: Text(
