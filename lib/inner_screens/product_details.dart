@@ -74,7 +74,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                   // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                   Row(
-                    children: [],
+                    children: [
+                      TextWidget(
+                        text: '\$2.59',
+                        color: color,
+                        textSize: 22,
+                        isTitle: true,
+                      )
+                    ],
                   ),
                 ],
               ),
