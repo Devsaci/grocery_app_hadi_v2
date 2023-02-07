@@ -77,7 +77,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 30, left: 20, right: 20),
+                        const EdgeInsets.only(top: 30, left: 15, right: 15),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -100,7 +100,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           child: Text(
                             '\$3.9',
                             style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 18,
                               color: color,
                               decoration: TextDecoration.lineThrough,
                             ),
