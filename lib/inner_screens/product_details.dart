@@ -45,7 +45,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             ),
           ),
           Flexible(
-            flex: 3,
+            flex: 4,
             child: Container(
               decoration: BoxDecoration(
                 color: Theme.of(context).primaryColorLight,
