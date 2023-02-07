@@ -133,42 +133,46 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 30),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      quantityControl(
-                        fct: () {},
-                        color: Colors.red,
-                        icon: CupertinoIcons.minus_square,
-                      ),
-                      const SizedBox(width: 10),
-                      Flexible(
-                        flex: 1,
-                        child: TextField(
-                          controller: _quantityTextController,
-                          key: const ValueKey('quantity'),
-                          keyboardType: TextInputType.number,
-                          maxLines: 1,
-                          decoration: const InputDecoration(
-                            border: UnderlineInputBorder(),
-                          ),
-                          textAlign: TextAlign.center,
-                          cursorColor: Colors.green,
-                          enabled: true,
-                          inputFormatters: [
-                            FilteringTextInputFormatter.allow(RegExp('[0-9]')),
-                          ],
-                          onChanged: (value) {},
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70, right: 70),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        quantityControl(
+                          fct: () {},
+                          color: Colors.red,
+                          icon: CupertinoIcons.minus_square,
                         ),
-                      ),
-                      const SizedBox(width: 10),
-                      quantityControl(
-                        fct: () {},
-                        color: Colors.green,
-                        icon: CupertinoIcons.plus_square,
-                      ),
-                    ],
+                        const SizedBox(width: 5),
+                        Flexible(
+                          flex: 1,
+                          child: TextField(
+                            controller: _quantityTextController,
+                            key: const ValueKey('quantity'),
+                            keyboardType: TextInputType.number,
+                            maxLines: 1,
+                            decoration: const InputDecoration(
+                              border: UnderlineInputBorder(),
+                            ),
+                            textAlign: TextAlign.center,
+                            cursorColor: Colors.green,
+                            enabled: true,
+                            inputFormatters: [
+                              FilteringTextInputFormatter.allow(
+                                  RegExp('[0-9]')),
+                            ],
+                            onChanged: (value) {},
+                          ),
+                        ),
+                        const SizedBox(width: 5),
+                        quantityControl(
+                          fct: () {},
+                          color: Colors.green,
+                          icon: CupertinoIcons.plus_square,
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
