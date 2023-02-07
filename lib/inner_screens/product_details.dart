@@ -46,7 +46,7 @@ class _ProductDetailsState extends State<ProductDetails> {
       body: Column(
         children: [
           Flexible(
-            flex: 3,
+            flex: 2,
             child: FancyShimmerImage(
               imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
               boxFit: BoxFit.scaleDown,
@@ -54,7 +54,7 @@ class _ProductDetailsState extends State<ProductDetails> {
             ),
           ),
           Flexible(
-            flex: 4,
+            flex: 3,
             child: Container(
               decoration: BoxDecoration(
                 //color: Theme.of(context).cardColor,
@@ -140,7 +140,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       quantityControl(
                         fct: () {},
                         color: Colors.red,
-                        icon: CupertinoIcons.minus,
+                        icon: CupertinoIcons.minus_square,
                       ),
                       const SizedBox(width: 10),
                       Flexible(
@@ -166,7 +166,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       quantityControl(
                         fct: () {},
                         color: Colors.green,
-                        icon: CupertinoIcons.plus,
+                        icon: CupertinoIcons.plus_square,
                       ),
                     ],
                   )
