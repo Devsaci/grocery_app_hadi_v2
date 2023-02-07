@@ -1,6 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import '../../widgets/text_widget.dart';
 
@@ -156,6 +157,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                           textAlign: TextAlign.center,
                           cursorColor: Colors.green,
                           enabled: true,
+                          inputFormatters: [
+                            FilteringTextInputFormatter.allow(RegExp('[0-9]')),
+                          ],
                         ),
                       ),
                       quantityControl(
