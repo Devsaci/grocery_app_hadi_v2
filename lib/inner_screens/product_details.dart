@@ -94,6 +94,15 @@ class _ProductDetailsState extends State<ProductDetails> {
                           color: color,
                           decoration: TextDecoration.lineThrough,
                         ),
+                      ),
+                      Container(
+                        color: Colors.amber,
+                        child: TextWidget(
+                          text: 'Free delivery',
+                          color: Colors.white,
+                          textSize: 20,
+                          isTitle: true,
+                        ),
                       )
                     ],
                   ),
