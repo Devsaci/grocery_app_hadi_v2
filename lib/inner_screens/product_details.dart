@@ -77,7 +77,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   // Row (text: '\$2.59', '/Kg','\$3.9',    BTN 'Free delivery')
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 20, left: 30, right: 30),
+                        const EdgeInsets.only(top: 30, left: 20, right: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
