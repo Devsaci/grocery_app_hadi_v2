@@ -136,6 +136,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                         color: Colors.red,
                         icon: CupertinoIcons.minus,
                       ),
+                      Flexible(
+                        flex: 1,
+                        child: TextField(),
+                      ),
                       quantityControl(
                         fct: () {},
                         color: Colors.green,
