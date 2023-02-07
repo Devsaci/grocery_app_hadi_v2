@@ -149,6 +149,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                           controller: _quantityTextController,
                           key: const ValueKey('quantity'),
                           keyboardType: TextInputType.number,
+                          textAlign: TextAlign.center,
+                          cursorColor: Colors.green,
+                          enabled: true,
                         ),
                       ),
                       quantityControl(
