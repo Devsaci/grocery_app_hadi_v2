@@ -160,6 +160,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           inputFormatters: [
                             FilteringTextInputFormatter.allow(RegExp('[0-9]')),
                           ],
+                          onChanged: (value) {},
                         ),
                       ),
                       quantityControl(
