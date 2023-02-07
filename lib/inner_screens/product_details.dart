@@ -147,6 +147,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         flex: 1,
                         child: TextField(
                           controller: _quantityTextController,
+                          key: const ValueKey('quantity'),
                         ),
                       ),
                       quantityControl(
