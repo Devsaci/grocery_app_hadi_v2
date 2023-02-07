@@ -148,6 +148,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         child: TextField(
                           controller: _quantityTextController,
                           key: const ValueKey('quantity'),
+                          keyboardType: TextInputType.number,
                         ),
                       ),
                       quantityControl(
