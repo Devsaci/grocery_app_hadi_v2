@@ -230,10 +230,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                               borderRadius: BorderRadius.circular(10),
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
-                                child: TextWidget(
-                                  text: 'Add to cart',
-                                  color: Colors.white,
-                                  textSize: 18,
+                                child: InkWell(
+                                  onTap: () {},
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: TextWidget(
+                                    text: 'Add to cart',
+                                    color: Colors.white,
+                                    textSize: 18,
+                                  ),
                                 ),
                               ),
                             ),
