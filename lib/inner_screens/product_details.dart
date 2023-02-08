@@ -179,7 +179,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                     //height: 50,
                     // width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Theme.of(context).primaryColor,
+                      color: Colors.amber.shade400,
                       borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20),
