@@ -187,46 +187,54 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 50, horizontal: 30),
+                          vertical: 0, horizontal: 30),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                            children: [
-                              TextWidget(
-                                text: 'Total',
-                                color: Colors.red.shade300,
-                                textSize: 20,
-                                isTitle: true,
-                              ),
-                              Row(
-                                children: [
-                                  TextWidget(
-                                    text: '\$2.59/',
-                                    color: color,
-                                    textSize: 20,
-                                    isTitle: true,
+                          Flexible(
+                            flex: 1,
+                            child: Column(
+                              children: [
+                                TextWidget(
+                                  text: 'Total',
+                                  color: Colors.red.shade300,
+                                  textSize: 20,
+                                  isTitle: true,
+                                ),
+                                FittedBox(
+                                  child: Row(
+                                    children: [
+                                      TextWidget(
+                                        text: '\$2.59/',
+                                        color: color,
+                                        textSize: 20,
+                                        isTitle: true,
+                                      ),
+                                      TextWidget(
+                                        text: ' / Kg',
+                                        color: color,
+                                        textSize: 16,
+                                        isTitle: false,
+                                      ),
+                                    ],
                                   ),
-                                  TextWidget(
-                                    text: ' / Kg',
-                                    color: color,
-                                    textSize: 16,
-                                    isTitle: false,
-                                  ),
-                                ],
-                              ),
-                            ],
+                                ),
+                              ],
+                            ),
                           ),
                           // const SizedBox(width: 8),
-                          Material(
-                            color: Colors.green.shade400,
-                            borderRadius: BorderRadius.circular(10),
-                            child: Padding(
-                              padding: const EdgeInsets.all(12.0),
-                              child: TextWidget(
-                                text: 'Add to cart',
-                                color: Colors.white,
-                                textSize: 18,
+                          Flexible(
+                            flex: 1,
+                            child: Material(
+                              color: Colors.green.shade400,
+                              borderRadius: BorderRadius.circular(10),
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: TextWidget(
+                                  text: 'Add to cart',
+                                  color: Colors.white,
+                                  textSize: 18,
+                                ),
                               ),
                             ),
                           ),
