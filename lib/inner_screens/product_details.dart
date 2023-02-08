@@ -218,10 +218,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                           ),
                           Material(
                             color: Colors.green.shade400,
-                            child: TextWidget(
-                              text: 'Add to cart',
-                              color: Colors.white,
-                              textSize: 18,
+                            borderRadius: BorderRadius.circular(10),
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: TextWidget(
+                                text: 'Add to cart',
+                                color: Colors.white,
+                                textSize: 18,
+                              ),
                             ),
                           ),
                         ],
