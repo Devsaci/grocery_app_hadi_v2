@@ -213,8 +213,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                                     isTitle: false,
                                   ),
                                 ],
-                              )
+                              ),
                             ],
+                          ),
+                          Material(
+                            color: Colors.green.shade400,
+                            child: TextWidget(
+                              text: 'Add to cart',
+                              color: Colors.white,
+                              textSize: 18,
+                            ),
                           ),
                         ],
                       ),
