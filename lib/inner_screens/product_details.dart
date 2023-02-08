@@ -188,7 +188,11 @@ class _ProductDetailsState extends State<ProductDetails> {
                     child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 50, horizontal: 30),
-                      child: Row(),
+                      child: Row(
+                        children: [
+                          Column(),
+                        ],
+                      ),
                     ),
                   ),
                 ],
