@@ -189,6 +189,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       padding: const EdgeInsets.symmetric(
                           vertical: 50, horizontal: 30),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
                             children: [
@@ -216,7 +217,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               ),
                             ],
                           ),
-                          const SizedBox(width: 8),
+                          // const SizedBox(width: 8),
                           Material(
                             color: Colors.green.shade400,
                             borderRadius: BorderRadius.circular(10),
