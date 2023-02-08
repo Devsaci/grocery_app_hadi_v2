@@ -177,7 +177,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                   const Spacer(),
                   Container(
                     height: 50,
-                    color: Colors.black26,
+                    decoration: BoxDecoration(
+                     
                   ),
                 ],
               ),
