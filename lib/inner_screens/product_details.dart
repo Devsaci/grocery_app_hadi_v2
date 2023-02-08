@@ -216,6 +216,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               ),
                             ],
                           ),
+                          const SizedBox(width: 8),
                           Material(
                             color: Colors.green.shade400,
                             borderRadius: BorderRadius.circular(10),
