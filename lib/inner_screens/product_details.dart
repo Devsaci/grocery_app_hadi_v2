@@ -186,17 +186,27 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ),
                     child: Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 50, horizontal: 30),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 50, horizontal: 30),
                       child: Row(
                         children: [
                           Column(
                             children: [
                               TextWidget(
                                 text: 'Total',
-                                color: color,
+                                color: Colors.red.shade300,
                                 textSize: 20,
                                 isTitle: true,
+                              ),
+                              Row(
+                                children: [
+                                  TextWidget(
+                                    text: '\$2.59/',
+                                    color: color,
+                                    textSize: 20,
+                                    isTitle: true,
+                                  ),
+                                ],
                               )
                             ],
                           ),
