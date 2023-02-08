@@ -206,6 +206,12 @@ class _ProductDetailsState extends State<ProductDetails> {
                                     textSize: 20,
                                     isTitle: true,
                                   ),
+                                  TextWidget(
+                                    text: ' / Kg',
+                                    color: color,
+                                    textSize: 16,
+                                    isTitle: false,
+                                  ),
                                 ],
                               )
                             ],
