@@ -185,12 +185,21 @@ class _ProductDetailsState extends State<ProductDetails> {
                         topRight: Radius.circular(20),
                       ),
                     ),
-                    child: const Padding(
+                    child: Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 50, horizontal: 30),
                       child: Row(
                         children: [
-                          Column(),
+                          Column(
+                            children: [
+                              TextWidget(
+                                text: 'Total',
+                                color: color,
+                                textSize: 20,
+                                isTitle: true,
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     ),
