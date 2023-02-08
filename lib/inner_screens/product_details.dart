@@ -176,13 +176,20 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                   const Spacer(),
                   Container(
-                    height: 50,
+                    //height: 50,
+                    // width: double.infinity,
                     decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20),
-                        )),
+                      color: Theme.of(context).primaryColor,
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                    ),
+                    child: const Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 50, horizontal: 30),
+                      child: Row(),
+                    ),
                   ),
                 ],
               ),
