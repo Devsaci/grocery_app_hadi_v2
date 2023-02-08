@@ -174,7 +174,11 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ],
                     ),
                   ),
-                  Container(),
+                  const Spacer(),
+                  Container(
+                    height: 50,
+                    color: Colors.black26,
+                  ),
                 ],
               ),
             ),
