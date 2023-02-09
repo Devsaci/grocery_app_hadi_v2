@@ -112,7 +112,9 @@ class _CartWidgetState extends State<CartWidget> {
                                 ),
                               ),
                               _quantityController(
-                                fct: () {},
+                                fct: () {
+                                  // 38. Implement the quantity text controller function
+                                },
                                 icon: CupertinoIcons.plus,
                                 color: Colors.green,
                               )
