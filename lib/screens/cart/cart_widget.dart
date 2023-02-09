@@ -81,13 +81,15 @@ class _CartWidgetState extends State<CartWidget> {
                             children: [
                               _quantityController(
                                 fct: () {
-                                  if (_quantityTextController.text == '1'){}else{}
-                                  setState(() {
-                                    _quantityTextController.text = (int.parse(
-                                        _quantityTextController.text) -
-                                        1)
-                                        .toString();
-                                  });
+                                  if (_quantityTextController.text == '1') {
+                                    return;
+                                  } else {
+                                    setState(() {
+                                      _quantityTextController.text = (int.parse(
+                                                  _quantityTextController
+                                                      .text) - 1).toString();
+                                    });
+                                  }
                                 },
                                 icon: CupertinoIcons.minus,
                                 color: Colors.red,
