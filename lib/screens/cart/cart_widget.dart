@@ -81,6 +81,7 @@ class _CartWidgetState extends State<CartWidget> {
                             children: [
                               _quantityController(
                                 fct: () {
+                                  if (_quantityTextController.text == '1'){}else{}
                                   setState(() {
                                     _quantityTextController.text = (int.parse(
                                         _quantityTextController.text) -
