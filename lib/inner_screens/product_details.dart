@@ -140,7 +140,17 @@ class _ProductDetailsState extends State<ProductDetails> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         quantityControl(
-                          fct: () {},
+                          fct: () {
+                            if (_quantityTextController.text == '1') {
+                              return;
+                            } else {
+                              setState(() {
+                                _quantityTextController.text = (int.parse(
+                                    _quantityTextController
+                                        .text) - 1).toString();
+                              });
+                            }
+                          },
                           color: Colors.red,
                           icon: CupertinoIcons.minus_square,
                         ),
