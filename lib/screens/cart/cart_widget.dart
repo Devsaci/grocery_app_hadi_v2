@@ -80,7 +80,14 @@ class _CartWidgetState extends State<CartWidget> {
                           child: Row(
                             children: [
                               _quantityController(
-                                fct: () {},
+                                fct: () {
+                                  setState(() {
+                                    _quantityTextController.text = (int.parse(
+                                        _quantityTextController.text) -
+                                        1)
+                                        .toString();
+                                  });
+                                },
                                 icon: CupertinoIcons.minus,
                                 color: Colors.red,
                               ),
