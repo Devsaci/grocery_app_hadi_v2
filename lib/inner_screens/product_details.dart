@@ -177,16 +177,23 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                         const SizedBox(width: 5),
                         quantityControl(
+                          // fct: () {
+                          //   if (_quantityTextController.text == '1') {
+                          //     return;
+                          //   } else {
+                          //     setState(() {
+                          //       _quantityTextController.text = (int.parse(
+                          //           _quantityTextController
+                          //               .text) + 1).toString();
+                          //     });
+                          //   }
+                          // },
                           fct: () {
-                            if (_quantityTextController.text == '1') {
-                              return;
-                            } else {
-                              setState(() {
-                                _quantityTextController.text = (int.parse(
-                                    _quantityTextController
-                                        .text) + 1).toString();
-                              });
-                            }
+                            setState(() {
+                              _quantityTextController.text =
+                                  (int.parse(_quantityTextController.text) + 1)
+                                      .toString();
+                            });
                           },
                           color: Colors.green,
                           icon: CupertinoIcons.plus_square,
@@ -285,7 +292,7 @@ class _ProductDetailsState extends State<ProductDetails> {
       color: color,
       child: InkWell(
         onTap: () {
-          fct;
+          fct();
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
