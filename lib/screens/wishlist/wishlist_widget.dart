@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
@@ -19,6 +20,22 @@ class WishlistScreen extends StatelessWidget {
           color: color,
           textSize: 22,
           isTitle: true,
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              IconlyBroken.delete,
+              color: color,
+            ),
+          )
+        ],
+      ),
+      body: Center(
+        child: Container(
+          height: 300,
+          width: 300,
+          color: Colors.amber,
         ),
       ),
     );
