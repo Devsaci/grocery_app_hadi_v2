@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/screens/wishlist/wishlist_widget.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
@@ -98,7 +100,10 @@ class _UserScreenState extends State<UserScreen> {
               _listTiles(
                 title: 'Wishlist',
                 icon: IconlyLight.heart,
-                onPressed: () {},
+                onPressed: () {
+                  GlobalMethods.navigateTo(
+                      ctx: context, routeName: WishlistScreen.routeName);
+                },
                 color: color,
               ),
               _listTiles(
