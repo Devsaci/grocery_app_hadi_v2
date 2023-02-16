@@ -5,7 +5,8 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import '../../services/utils.dart';
 
 class WishlistScreen extends StatelessWidget {
-  const WishlistScreen({super.key});
+  const WishlistScreen({Key? key}) : super(key: key);
+  static const routeName = "/WishlistScreen";
 
   @override
   Widget build(BuildContext context) {
