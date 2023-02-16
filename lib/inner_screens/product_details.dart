@@ -145,9 +145,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                               return;
                             } else {
                               setState(() {
-                                _quantityTextController.text = (int.parse(
-                                    _quantityTextController
-                                        .text) - 1).toString();
+                                _quantityTextController.text =
+                                    (int.parse(_quantityTextController.text) -
+                                            1)
+                                        .toString();
                               });
                             }
                           },
@@ -172,7 +173,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                               FilteringTextInputFormatter.allow(
                                   RegExp('[0-9]')),
                             ],
-                            onChanged: (value) {},
+                            onChanged: (value) {
+                              setState(() {
+                                if (value.isEmpty) {
+                                  _quantityTextController.text = '1';
+                                } else {}
+                              });
+                            },
                           ),
                         ),
                         const SizedBox(width: 5),
@@ -183,7 +190,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                   (int.parse(_quantityTextController.text) + 1)
                                       .toString();
                             });
-                          }, 
+                          },
                           color: Colors.green,
                           icon: CupertinoIcons.plus_square,
                         ),
@@ -227,7 +234,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                                         isTitle: true,
                                       ),
                                       TextWidget(
-                                        text: ' / Kg',
+                                        text:
+                                            '${_quantityTextController.text}Kg',
                                         color: color,
                                         textSize: 16,
                                         isTitle: false,
