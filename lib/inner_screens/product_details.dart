@@ -177,24 +177,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                         const SizedBox(width: 5),
                         quantityControl(
-                          // fct: () {
-                          //   if (_quantityTextController.text == '1') {
-                          //     return;
-                          //   } else {
-                          //     setState(() {
-                          //       _quantityTextController.text = (int.parse(
-                          //           _quantityTextController
-                          //               .text) + 1).toString();
-                          //     });
-                          //   }
-                          // },
                           fct: () {
                             setState(() {
                               _quantityTextController.text =
                                   (int.parse(_quantityTextController.text) + 1)
                                       .toString();
                             });
-                          },
+                          }, 
                           color: Colors.green,
                           icon: CupertinoIcons.plus_square,
                         ),
