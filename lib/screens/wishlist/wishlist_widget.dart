@@ -59,7 +59,7 @@ class WishlistWidget extends StatelessWidget {
                   child: TextWidget(
                     text: 'Title',
                     color: color,
-                    textSize: 20.0,
+                    textSize: 12.0,
                     maxLines: 2,
                     isTitle: true,
                   ),
@@ -68,7 +68,7 @@ class WishlistWidget extends StatelessWidget {
                 TextWidget(
                   text: '\$2.59',
                   color: color,
-                  textSize: 18.0,
+                  textSize: 15.0,
                   maxLines: 1,
                   isTitle: true,
                 ),
