@@ -4,42 +4,13 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
 
-class WishlistScreen extends StatelessWidget {
-  const WishlistScreen({Key? key}) : super(key: key);
-  static const routeName = "/WishlistScreen";
+class WishlistWidget extends StatelessWidget {
+  const WishlistWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        elevation: 0,
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        title: TextWidget(
-          text: 'Wishlist (2)',
-          color: color,
-          textSize: 22,
-          isTitle: true,
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              IconlyBroken.delete,
-              color: color,
-            ),
-          )
-        ],
-      ),
-      body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
-          color: Colors.amber,
-        ),
-      ),
-    );
+    return const Scaffold();
   }
 }

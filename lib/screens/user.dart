@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
 import '../widgets/text_widget.dart';
+import 'wishlist/wishlist_screen.dart';
 
 class UserScreen extends StatefulWidget {
   const UserScreen({Key? key}) : super(key: key);
