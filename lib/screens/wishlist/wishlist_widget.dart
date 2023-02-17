@@ -1,3 +1,4 @@
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import '../../inner_screens/product_details.dart';
 import '../../services/global_methods.dart';
@@ -30,6 +31,10 @@ class WishlistWidget extends StatelessWidget {
               margin: const EdgeInsets.only(left: 8),
               width: size.width * 0.2,
               height: size.width * 0.25,
+              child: FancyShimmerImage(
+                imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+                boxFit: BoxFit.cover,
+              ),
             ),
           ],
         ),
