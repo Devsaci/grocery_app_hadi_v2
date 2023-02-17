@@ -17,7 +17,7 @@ class WishlistScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     return Scaffold(
       appBar: AppBar(
-        //centerTitle: true,
+        centerTitle: true,
         leading: const BackWidget(),
         automaticallyImplyLeading: false,
         elevation: 0,
