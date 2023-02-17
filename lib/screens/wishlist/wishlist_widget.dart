@@ -1,6 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import '../../inner_screens/product_details.dart';
 import '../../services/global_methods.dart';
 
@@ -53,9 +54,18 @@ class WishlistWidget extends StatelessWidget {
                       const HeartBTN(),
                     ],
                   ),
-                )
+                ),
+                Flexible(
+                  child: TextWidget(
+                    text: 'Title',
+                    color: color,
+                    textSize: 20.0,
+                    maxLines: 2,
+                    isTitle: true,
+                  ),
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
