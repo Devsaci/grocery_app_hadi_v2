@@ -1,5 +1,6 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import '../../inner_screens/product_details.dart';
 import '../../services/global_methods.dart';
 
@@ -36,6 +37,21 @@ class WishlistWidget extends StatelessWidget {
                 boxFit: BoxFit.cover,
               ),
             ),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        IconlyLight.bag2,
+                        color: color,
+                      ),
+                    )
+                  ],
+                )
+              ],
+            )
           ],
         ),
       ),
