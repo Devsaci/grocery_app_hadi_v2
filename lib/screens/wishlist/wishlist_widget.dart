@@ -17,7 +17,7 @@ class WishlistWidget extends StatelessWidget {
             ctx: context, routeName: ProductDetails.routeName);
       },
       child: Container(
-        height: 100,
+        height: size.height * 0.20,
         width: 100,
         color: Colors.amberAccent,
       ),
