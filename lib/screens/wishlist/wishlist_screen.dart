@@ -20,7 +20,7 @@ class WishlistScreen extends StatelessWidget {
         leading: const BackWidget(),
         automaticallyImplyLeading: false,
         elevation: 0,
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        backgroundColor: Theme.of(context).cardColor.withOpacity(0.5),
         title: TextWidget(
           text: 'Wishlist (2)',
           color: color,
