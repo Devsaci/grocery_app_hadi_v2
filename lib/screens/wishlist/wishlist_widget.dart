@@ -5,6 +5,7 @@ import '../../inner_screens/product_details.dart';
 import '../../services/global_methods.dart';
 
 import '../../services/utils.dart';
+import '../../widgets/heart_btn.dart';
 
 class WishlistWidget extends StatelessWidget {
   const WishlistWidget({Key? key}) : super(key: key);
@@ -39,16 +40,19 @@ class WishlistWidget extends StatelessWidget {
             ),
             Column(
               children: [
-                Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        IconlyLight.bag2,
-                        color: color,
+                Flexible(
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          IconlyLight.bag2,
+                          color: color,
+                        ),
                       ),
-                    )
-                  ],
+                      const HeartBTN(),
+                    ],
+                  ),
                 )
               ],
             )
