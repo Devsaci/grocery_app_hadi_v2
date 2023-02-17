@@ -9,6 +9,7 @@ import 'inner_screens/product_details.dart';
 import 'provider/dark_theme_provider.dart';
 import 'screens/btm_bar.dart';
 import 'screens/wishlist/wishlist_screen.dart';
+import 'screens/wishlist/wishlist_widget.dart';
 
 // void main() {
 //   WidgetsFlutterBinding.ensureInitialized();
@@ -57,7 +58,7 @@ class _MyAppState extends State<MyApp> {
             debugShowCheckedModeBanner: true,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const BottomBarScreen(),
+            home: const WishlistWidget(),
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),

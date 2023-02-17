@@ -16,7 +16,11 @@ class WishlistWidget extends StatelessWidget {
         GlobalMethods.navigateTo(
             ctx: context, routeName: ProductDetails.routeName);
       },
-      child: Container(),
+      child: Container(
+        height: 100,
+        width: 100,
+        color: Colors.amberAccent,
+      ),
     );
   }
 }
