@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:grocery_app_hadi_v1/screens/wishlist/wishlist_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 
@@ -37,7 +38,11 @@ class WishlistScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const WishlistWidget(),
+      body: MasonryGridView.count(
+          crossAxisCount: 2,
+          itemBuilder: (context, index) {
+            return const WishlistWidget();
+          }),
     );
   }
 }
