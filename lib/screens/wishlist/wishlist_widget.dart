@@ -19,7 +19,11 @@ class WishlistWidget extends StatelessWidget {
       child: Container(
         height: size.height * 0.20,
         width: 100,
-        color: Colors.amberAccent,
+        decoration: BoxDecoration(
+          color: Theme.of(context).primaryColorDark,
+          border: Border.all(color: color, width: 1),
+          borderRadius: BorderRadius.circular(8.0),
+        ),
       ),
     );
   }
