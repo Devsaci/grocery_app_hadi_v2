@@ -18,10 +18,10 @@ class WishlistWidget extends StatelessWidget {
       },
       child: Container(
         height: size.height * 0.20,
-        width: 100,
+        //width: 100,
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColorDark,
-          border: Border.all(color: color, width: 1),
+          border: Border.all(color: color, width: 3),
           borderRadius: BorderRadius.circular(8.0),
         ),
       ),
