@@ -24,6 +24,15 @@ class WishlistWidget extends StatelessWidget {
           border: Border.all(color: color, width: 1),
           borderRadius: BorderRadius.circular(8.0),
         ),
+        child: Row(
+          children: [
+            Container(
+              margin: const EdgeInsets.only(left: 8),
+              width: size.width * 0.2,
+              height: size.width * 0.25,
+            ),
+          ],
+        ),
       ),
     );
   }
