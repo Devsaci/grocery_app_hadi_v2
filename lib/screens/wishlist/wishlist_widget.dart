@@ -14,6 +14,7 @@ class WishlistScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: TextWidget(
