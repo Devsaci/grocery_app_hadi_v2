@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../inner_screens/product_details.dart';
+import '../../services/global_methods.dart';
 
 import '../../services/utils.dart';
 
@@ -11,6 +11,12 @@ class WishlistWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
-    return const Scaffold();
+    return GestureDetector(
+      onTap: () {
+        GlobalMethods.navigateTo(
+            ctx: context, routeName: ProductDetails.routeName);
+      },
+      child: Container(),
+    );
   }
 }
