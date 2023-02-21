@@ -49,8 +49,8 @@ class WishlistWidget extends StatelessWidget {
                         IconButton(
                           onPressed: () {},
                           icon: Icon(
-                            IconlyLight.bag2,
-                            color: color,
+                            IconlyBold.bag2,
+                            color: Colors.lightGreenAccent.shade700,
                           ),
                         ),
                         const HeartBTN(),

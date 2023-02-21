@@ -15,10 +15,10 @@ class HeartBTN extends StatelessWidget {
           print('print heart button is pressed');
         }
       },
-      child: Icon(
-        IconlyLight.heart,
+      child: const Icon(
+        IconlyBold.heart,
         size: 20,
-        color: color,
+        color: Colors.red,
       ),
     );
   }
