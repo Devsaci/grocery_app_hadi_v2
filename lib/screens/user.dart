@@ -168,9 +168,7 @@ class _UserScreenState extends State<UserScreen> {
                   width: 40,
                   fit: BoxFit.fill,
                 ),
-                const SizedBox(
-                  width: 10,
-                ),
+                const SizedBox(width: 10),
                 const Text("Logout"),
               ],
             ),
