@@ -27,8 +27,8 @@ class WishlistWidget extends StatelessWidget {
           //width: 100,
           decoration: BoxDecoration(
             color: Theme.of(context).cardColor,
-            border: Border.all(color: color, width: 1.5),
-            borderRadius: BorderRadius.circular(8.0),
+            border: Border.all(color: Colors.deepOrange, width: 1.5),
+            borderRadius: BorderRadius.circular(20.0),
           ),
           child: Row(
             children: [
