@@ -1,4 +1,5 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
@@ -47,7 +48,11 @@ class WishlistWidget extends StatelessWidget {
                     child: Row(
                       children: [
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            if (kDebugMode) {
+                              print("IconButton  IconlyBold.bag2  is pressed");
+                            }
+                          },
                           icon: Icon(
                             IconlyBold.bag2,
                             color: Colors.lightGreenAccent.shade700,
