@@ -39,9 +39,7 @@ class _UserScreenState extends State<UserScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 15,
-              ),
+              const SizedBox(height: 15),
               RichText(
                 text: TextSpan(
                   text: 'Hi,  ',
@@ -65,24 +63,16 @@ class _UserScreenState extends State<UserScreen> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 5,
-              ),
+              const SizedBox(height: 5),
               TextWidget(
                 text: 'Email@email.com',
                 color: color,
                 textSize: 18,
                 // isTitle: true,
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Divider(
-                thickness: 2,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
+              const Divider(thickness: 2),
+              const SizedBox(height: 20),
               _listTiles(
                 title: 'Address 2',
                 subtitle: 'My subtitle',
@@ -124,7 +114,7 @@ class _UserScreenState extends State<UserScreen> {
                 title: 'Logout',
                 icon: IconlyLight.logout,
                 onPressed: () async {
-                  await _showLogoutDialog();
+                  //await _showLogoutDialog();
                 },
                 color: color,
               ),
@@ -155,49 +145,7 @@ class _UserScreenState extends State<UserScreen> {
 
 // 19. Implement the logout dialog
 
-  Future<void> _showLogoutDialog() async {
-    await showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            title: Row(
-              children: [
-                Image.asset(
-                  'assets/images/warning-sign.png',
-                  height: 40,
-                  width: 40,
-                  fit: BoxFit.fill,
-                ),
-                const SizedBox(width: 10),
-                const Text("Logout"),
-              ],
-            ),
-            content: const Text("Do you want sign out ?"),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  if (Navigator.canPop(context)) {
-                    Navigator.pop(context);
-                  }
-                },
-                child: TextWidget(
-                  text: "Cancel",
-                  color: Colors.cyan,
-                  textSize: 20,
-                ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: TextWidget(
-                  text: "OK",
-                  color: Colors.red,
-                  textSize: 20,
-                ),
-              ),
-            ],
-          );
-        });
-  }
+
 
   Future<void> _showAddressDialog() async {
     await showDialog(
