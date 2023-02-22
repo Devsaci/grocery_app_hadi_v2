@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/screens/wishlist/wishlist_widget.dart';
-import 'package:grocery_app_hadi_v1/services/global_methods.dart';
+
+import '../../services/global_methods.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
@@ -58,7 +58,9 @@ class _UserScreenState extends State<UserScreen> {
                         ),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
-                            print('My name is pressed');
+                            if (kDebugMode) {
+                              print('My name is pressed');
+                            }
                           }),
                   ],
                 ),
@@ -115,6 +117,12 @@ class _UserScreenState extends State<UserScreen> {
                 icon: IconlyLight.logout,
                 onPressed: () async {
                   //await _showLogoutDialog();
+                  GlobalMethods.warningDialog(
+                    title: 'Sign out',
+                    subtitle: 'Do you wanna sign out?',
+                    fct: () {},
+                    context: context,
+                  );
                 },
                 color: color,
               ),
