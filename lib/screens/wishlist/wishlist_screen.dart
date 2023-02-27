@@ -4,6 +4,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:grocery_app_hadi_v1/screens/wishlist/wishlist_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 
+import '../../services/global_methods.dart';
 import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
 
@@ -30,7 +31,14 @@ class WishlistScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GlobalMethods.warningDialog(
+                title: 'Empty your Wishlist?',
+                subtitle: 'Are you sure?',
+                fct: () {},
+                context: context,
+              );
+            },
             icon: Icon(
               IconlyBroken.delete,
               color: color,
