@@ -36,7 +36,10 @@ class GlobalMethods {
                 ),
               ],
             ),
-            content: Text(subtitle),
+            content: Text(
+              subtitle,
+              style: const TextStyle(fontSize: 15),
+            ),
             actions: [
               TextButton(
                 onPressed: () {
