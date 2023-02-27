@@ -30,7 +30,10 @@ class GlobalMethods {
                   fit: BoxFit.fill,
                 ),
                 const SizedBox(width: 10),
-                Text(title),
+                Text(
+                  title,
+                  style: const TextStyle(fontSize: 18),
+                ),
               ],
             ),
             content: Text(subtitle),
