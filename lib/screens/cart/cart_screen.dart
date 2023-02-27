@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
 import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
@@ -20,7 +21,14 @@ class CartScreen extends StatelessWidget {
             text: 'Cart (2)', color: color, isTitle: true, textSize: 22),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GlobalMethods.warningDialog(
+                title: 'Empty your cart?',
+                subtitle: 'Are you sure?',
+                fct: () {},
+                context: context,
+              );
+            },
             icon: const Icon(IconlyBroken.delete),
             color: color,
           ),
