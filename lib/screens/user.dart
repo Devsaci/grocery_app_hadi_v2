@@ -87,7 +87,11 @@ class _UserScreenState extends State<UserScreen> {
               _listTiles(
                 title: 'Orders',
                 icon: IconlyLight.bag,
-                onPressed: () {},
+                onPressed: () {
+                  if (kDebugMode) {
+                    print('Order button pressed');
+                  }
+                },
                 color: color,
               ),
               _listTiles(
@@ -152,8 +156,6 @@ class _UserScreenState extends State<UserScreen> {
   }
 
 // 19. Implement the logout dialog
-
-
 
   Future<void> _showAddressDialog() async {
     await showDialog(
