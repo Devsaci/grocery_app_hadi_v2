@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 import '../provider/dark_theme_provider.dart';
 import '../widgets/text_widget.dart';
+import 'orders/orders_screen.dart';
 import 'wishlist/wishlist_screen.dart';
 
 class UserScreen extends StatefulWidget {
@@ -88,9 +89,11 @@ class _UserScreenState extends State<UserScreen> {
                 title: 'Orders',
                 icon: IconlyLight.bag,
                 onPressed: () {
-                  if (kDebugMode) {
-                    print('Order button pressed');
-                  }
+                  // if (kDebugMode) {
+                  //   print('Order button pressed');
+                  // }
+                  GlobalMethods.navigateTo(
+                      ctx: context, routeName: OrdersScreen.routeName);
                 },
                 color: color,
               ),
