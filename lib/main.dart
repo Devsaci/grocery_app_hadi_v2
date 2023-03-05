@@ -8,6 +8,7 @@ import 'inner_screens/on_sale_screen.dart';
 import 'inner_screens/product_details.dart';
 import 'provider/dark_theme_provider.dart';
 import 'screens/btm_bar.dart';
+import 'screens/orders/orders_screen.dart';
 import 'screens/wishlist/wishlist_screen.dart';
 
 // void main() {
