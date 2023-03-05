@@ -89,11 +89,11 @@ class _UserScreenState extends State<UserScreen> {
                 title: 'Orders',
                 icon: IconlyLight.bag,
                 onPressed: () {
-                  // if (kDebugMode) {
-                  //   print('Order button pressed');
-                  // }
-                  GlobalMethods.navigateTo(
-                      ctx: context, routeName: OrdersScreen.routeName);
+                  if (kDebugMode) {
+                    print('Order button pressed');
+                  }
+                  // GlobalMethods.navigateTo(
+                  //     ctx: context, routeName: OrdersScreen.routeName);
                 },
                 color: color,
               ),
