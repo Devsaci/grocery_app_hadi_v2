@@ -10,6 +10,8 @@ class OrderWidget extends StatefulWidget {
 class _OrderWidgetState extends State<OrderWidget> {
   @override
   Widget build(BuildContext context) {
-    return ListTile();
+    return ListTile(
+      subtitle: const Text('Paid: \$12.8'),
+    );
   }
 }
