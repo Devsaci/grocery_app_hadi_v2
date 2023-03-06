@@ -1,3 +1,4 @@
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 
 class OrderWidget extends StatefulWidget {
@@ -13,6 +14,9 @@ class _OrderWidgetState extends State<OrderWidget> {
     return ListTile(
       subtitle: const Text('Paid: \$12.8'),
       onTap: () {},
+      leading: FancyShimmerImage(
+        imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+      ),
     );
   }
 }
