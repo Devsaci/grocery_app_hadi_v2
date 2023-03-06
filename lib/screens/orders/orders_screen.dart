@@ -15,6 +15,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: const BackWidget(),
+        elevation: 0,
       ),
     );
   }
