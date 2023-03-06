@@ -20,6 +20,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
       appBar: AppBar(
         leading: const BackWidget(),
         elevation: 0,
+        centerTitle: true,
         title: TextWidget(
           text: 'Your orders (2)',
           color: color,
