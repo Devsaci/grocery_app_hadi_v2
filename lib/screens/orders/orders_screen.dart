@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/screens/orders/orders_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
@@ -29,6 +30,13 @@ class _OrdersScreenState extends State<OrdersScreen> {
         ),
         backgroundColor:
             Theme.of(context).scaffoldBackgroundColor.withOpacity(0.8),
+      ),
+      body: ListView.separated(
+        itemBuilder: (context, index) => OrderWidget(),
+        separatorBuilder: (context, index) {
+          return Divider();
+        },
+        itemCount: 5,
       ),
     );
   }
