@@ -27,6 +27,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
           textSize: 20.0,
           isTitle: true,
         ),
+        backgroundColor: Colors.amber,
       ),
     );
   }
