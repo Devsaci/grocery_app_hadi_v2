@@ -20,6 +20,7 @@ class _OrderWidgetState extends State<OrderWidget> {
       leading: FancyShimmerImage(
         width: size.width * 0.2,
         imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+        boxFit: BoxFit.fill,
       ),
     );
   }
