@@ -12,6 +12,7 @@ class _OrderWidgetState extends State<OrderWidget> {
   Widget build(BuildContext context) {
     return ListTile(
       subtitle: const Text('Paid: \$12.8'),
+      onTap: () {},
     );
   }
 }
