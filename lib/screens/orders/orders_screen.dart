@@ -32,7 +32,10 @@ class _OrdersScreenState extends State<OrdersScreen> {
             Theme.of(context).scaffoldBackgroundColor.withOpacity(0.8),
       ),
       body: ListView.separated(
-        itemBuilder: (context, index) => OrderWidget(),
+        itemBuilder: (context, index) => const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 2, vertical: 6),
+          child: OrderWidget(),
+        ),
         separatorBuilder: (context, index) {
           return Divider();
         },
