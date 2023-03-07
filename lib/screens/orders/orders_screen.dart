@@ -37,7 +37,10 @@ class _OrdersScreenState extends State<OrdersScreen> {
           child: OrderWidget(),
         ),
         separatorBuilder: (context, index) {
-          return Divider();
+          return Divider(
+            color: color,
+            thickness: 2,
+          );
         },
         itemCount: 5,
       ),
