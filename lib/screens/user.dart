@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/screens/viewed_recently/viewed_recently.dart';
 
 import '../../services/global_methods.dart';
 import 'package:provider/provider.dart';
@@ -109,7 +110,10 @@ class _UserScreenState extends State<UserScreen> {
               _listTiles(
                 title: 'Viewed',
                 icon: IconlyLight.show,
-                onPressed: () {},
+                onPressed: () {
+                  GlobalMethods.navigateTo(
+                      ctx: context, routeName: ViewedRecentlyScreen.routeName);
+                },
                 color: color,
               ),
               _listTiles(

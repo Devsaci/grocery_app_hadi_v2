@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ViewedRecentlyScreen extends StatefulWidget {
+  static const routeName = '/ViewedRecentlyScreen';
   const ViewedRecentlyScreen({super.key});
 
   @override
