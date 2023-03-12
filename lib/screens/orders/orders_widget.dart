@@ -1,5 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/inner_screens/product_details.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
 import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
@@ -18,7 +20,10 @@ class _OrderWidgetState extends State<OrderWidget> {
     Size size = Utils(context).getScreenSize;
     return ListTile(
       subtitle: const Text('Paid: \$12.8'),
-      onTap: () {},
+      onTap: () {
+        GlobalMethods.navigateTo(
+            ctx: context, routeName: ProductDetails.routeName);
+      },
       leading: FancyShimmerImage(
         width: size.width * 0.2,
         imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
