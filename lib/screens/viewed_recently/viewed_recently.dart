@@ -31,6 +31,7 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
         ],
         leading: const BackWidget(),
         automaticallyImplyLeading: false,
+        elevation: 5,
       ),
     );
   }
