@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 
 class ViewedRecentlyScreen extends StatefulWidget {
@@ -14,6 +15,12 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(IconlyBroken.delete),
+          )
+        ],
         leading: const BackWidget(),
       ),
     );
