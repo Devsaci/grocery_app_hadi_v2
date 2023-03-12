@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/screens/viewed_recently/viewed_widget.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
@@ -45,6 +46,9 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
         backgroundColor:
             Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
       ),
+      body: ListView.builder(itemBuilder: (ctx, index) {
+        return const ViewedRecentlyWidget();
+      }),
     );
   }
 }
