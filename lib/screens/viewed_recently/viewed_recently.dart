@@ -10,6 +10,8 @@ class ViewedRecentlyScreen extends StatefulWidget {
 class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
