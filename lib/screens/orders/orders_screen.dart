@@ -42,7 +42,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
             thickness: 2,
           );
         },
-        itemCount: 5,
+        itemCount: 50,
       ),
     );
   }
