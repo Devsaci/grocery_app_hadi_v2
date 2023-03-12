@@ -25,6 +25,7 @@ class _OrderWidgetState extends State<OrderWidget> {
         boxFit: BoxFit.fill,
       ),
       title: TextWidget(text: 'Title  x12', color: color, textSize: 18),
+      trailing: TextWidget(text: '03/08/2022', color: color, textSize: 13),
     );
   }
 }
