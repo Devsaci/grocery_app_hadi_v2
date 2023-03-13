@@ -57,7 +57,11 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
             child: Material(
               color: Colors.green,
               child: InkWell(
-                child: Icon(CupertinoIcons.add),
+                child: Icon(
+                  CupertinoIcons.add,
+                  color: Colors.white,
+                  size: 30,
+                ),
               ),
             ),
           ),
