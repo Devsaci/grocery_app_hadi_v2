@@ -41,6 +41,13 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
                 textSize: 20,
                 isTitle: true,
               ),
+              const SizedBox(width: 12),
+              TextWidget(
+                text: '\$12.88',
+                color: color,
+                textSize: 16,
+                isTitle: false,
+              ),
             ],
           )
         ],
