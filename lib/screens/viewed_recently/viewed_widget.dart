@@ -52,10 +52,13 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
             ],
           ),
           const Spacer(),
-          Material(
-            color: Colors.green,
-            child: InkWell(
-              child: Icon(CupertinoIcons.add),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: Material(
+              color: Colors.green,
+              child: InkWell(
+                child: Icon(CupertinoIcons.add),
+              ),
             ),
           ),
         ],
