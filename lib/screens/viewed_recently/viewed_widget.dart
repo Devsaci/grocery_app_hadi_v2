@@ -31,6 +31,9 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
             width: size.width * 0.25,
           ),
           const SizedBox(width: 12),
+          Column(
+            children: [],
+          )
         ],
       ),
     );
