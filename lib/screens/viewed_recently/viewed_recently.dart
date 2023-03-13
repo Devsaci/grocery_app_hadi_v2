@@ -31,7 +31,10 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
                 context: context,
               );
             },
-            icon: const Icon(IconlyBroken.delete),
+            icon: const Icon(
+              IconlyBroken.delete,
+            ),
+            color: color,
           )
         ],
         leading: const BackWidget(),
