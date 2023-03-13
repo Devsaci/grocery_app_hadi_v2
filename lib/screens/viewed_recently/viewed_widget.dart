@@ -1,4 +1,5 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/inner_screens/product_details.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
@@ -49,7 +50,13 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
                 isTitle: false,
               ),
             ],
-          )
+          ),
+          Material(
+            color: Colors.green,
+            child: InkWell(
+              child: Icon(CupertinoIcons.add),
+            ),
+          ),
         ],
       ),
     );
