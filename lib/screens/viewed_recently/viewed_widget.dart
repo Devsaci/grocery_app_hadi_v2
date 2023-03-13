@@ -51,6 +51,7 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
               ),
             ],
           ),
+          const Spacer(),
           Material(
             color: Colors.green,
             child: InkWell(
