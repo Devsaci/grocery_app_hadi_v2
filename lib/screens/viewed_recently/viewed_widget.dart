@@ -13,15 +13,18 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
-    return Row(
-      children: [
-        FancyShimmerImage(
-          imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
-          boxFit: BoxFit.fill,
-          height: size.width * 0.27,
-          width: size.width * 0.25,
-        ),
-      ],
+    return GestureDetector(
+      onTap: () {},
+      child: Row(
+        children: [
+          FancyShimmerImage(
+            imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+            boxFit: BoxFit.fill,
+            height: size.width * 0.27,
+            width: size.width * 0.25,
+          ),
+        ],
+      ),
     );
   }
 }
