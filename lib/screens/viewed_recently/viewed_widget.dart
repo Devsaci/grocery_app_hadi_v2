@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/inner_screens/product_details.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class ViewedRecentlyWidget extends StatefulWidget {
   const ViewedRecentlyWidget({super.key});
@@ -14,6 +15,7 @@ class ViewedRecentlyWidget extends StatefulWidget {
 class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
   @override
   Widget build(BuildContext context) {
+    Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
     return GestureDetector(
       onTap: () {
@@ -32,7 +34,14 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
           ),
           const SizedBox(width: 12),
           Column(
-            children: [],
+            children: [
+              TextWidget(
+                text: "Title",
+                color: color,
+                textSize: 20,
+                isTitle: true,
+              ),
+            ],
           )
         ],
       ),
