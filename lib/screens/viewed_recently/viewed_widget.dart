@@ -1,5 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/inner_screens/product_details.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 
 class ViewedRecentlyWidget extends StatefulWidget {
@@ -14,7 +16,12 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        GlobalMethods.navigateTo(
+          ctx: context,
+          routeName: ProductDetails.routeName,
+        );
+      },
       child: Row(
         children: [
           FancyShimmerImage(
@@ -23,6 +30,7 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
             height: size.width * 0.27,
             width: size.width * 0.25,
           ),
+          const SizedBox(width: 12),
         ],
       ),
     );
