@@ -49,9 +49,11 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
         backgroundColor:
             Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
       ),
-      body: ListView.builder(itemBuilder: (ctx, index) {
-        return const ViewedRecentlyWidget();
-      }),
+      body: ListView.builder(
+          itemCount: 8,
+          itemBuilder: (ctx, index) {
+            return const ViewedRecentlyWidget();
+          }),
     );
   }
 }
