@@ -55,6 +55,7 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: Material(
+              borderRadius: BorderRadius.circular(20),
               color: Colors.green,
               child: InkWell(
                 onTap: () {},
