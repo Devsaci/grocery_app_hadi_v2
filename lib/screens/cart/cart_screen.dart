@@ -13,6 +13,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
     Size size = Utils(context).getScreenSize;
+    bool _isEmpty = true;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
