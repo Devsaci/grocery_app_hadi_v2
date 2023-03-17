@@ -16,12 +16,13 @@ class CartScreen extends StatelessWidget {
     Size size = Utils(context).getScreenSize;
     bool _isEmpty = true;
     return _isEmpty
-        ? EmptyScreen(
+        ? const EmptyScreen(
             title: 'Your cart is empty',
             subtitle: 'Add something and make me happy',
             buttonText: 'Shop now',
             imagePath: "assets/images/cart.png",
           )
+        // ignore: dead_code
         : Scaffold(
             appBar: AppBar(
               elevation: 0,
