@@ -8,6 +8,7 @@ class EmptyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = Utils(context).getScreenSize;
     return Scaffold(
       body: Column(
         children: [
@@ -21,6 +22,9 @@ class EmptyScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           TextWidget(text: "title", color: Colors.cyan, textSize: 20),
+          const SizedBox(height: 20),
+          TextWidget(text: "subtitle", color: Colors.cyan, textSize: 20),
+          SizedBox(height: size.height * 0.1),
         ],
       ),
     );
