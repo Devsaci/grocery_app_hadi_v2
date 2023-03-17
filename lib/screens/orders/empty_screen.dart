@@ -38,7 +38,7 @@ class EmptyScreen extends StatelessWidget {
             const SizedBox(height: 20),
             TextWidget(text: title, color: Colors.cyan, textSize: 20),
             const SizedBox(height: 20),
-            TextWidget(text: subtitle, color: Colors.cyan, textSize: 20),
+            TextWidget(text: subtitle, color: Colors.cyan, textSize: 15),
             SizedBox(height: size.height * 0.1),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -49,7 +49,7 @@ class EmptyScreen extends StatelessWidget {
                   ),
                   backgroundColor: Theme.of(context).colorScheme.secondary,
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 10)),
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 5)),
               onPressed: () {
                 GlobalMethods.navigateTo(
                     ctx: context, routeName: FeedsScreen.routeName);
