@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class EmptyScreen extends StatelessWidget {
@@ -6,6 +5,13 @@ class EmptyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          const SizedBox(height: 50),
+          Image.asset("assets/images/cart.png"),
+        ],
+      ),
+    );
   }
 }
