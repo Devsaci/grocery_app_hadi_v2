@@ -6,8 +6,14 @@ import '../../services/utils.dart';
 import '../../widgets/text_widget.dart';
 
 class EmptyScreen extends StatelessWidget {
-  const EmptyScreen({super.key});
-
+  const EmptyScreen({
+    super.key,
+    required this.imagePath,
+    required this.title,
+    required this.subtitle,
+    required this.buttonText,
+  });
+  final String imagePath, title, subtitle, buttonText;
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
