@@ -27,7 +27,7 @@ class EmptyScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 50),
+            const SizedBox(height: 10),
             Image.asset(imagePath),
             const SizedBox(height: 10),
             const Text(
@@ -35,21 +35,22 @@ class EmptyScreen extends StatelessWidget {
               style: TextStyle(
                   color: Colors.red, fontSize: 40, fontWeight: FontWeight.w700),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             TextWidget(text: title, color: Colors.cyan, textSize: 20),
             const SizedBox(height: 20),
             TextWidget(text: subtitle, color: Colors.cyan, textSize: 15),
-            SizedBox(height: size.height * 0.1),
+            // SizedBox(height: size.height * 0.1),
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   elevation: 5,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
-                    side: const BorderSide(color: Colors.black, width: 3),
+                    side: const BorderSide(color: Colors.white, width: 3),
                   ),
                   backgroundColor: Theme.of(context).colorScheme.secondary,
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 5)),
+                      const EdgeInsets.symmetric(vertical: 30, horizontal: 60)),
               onPressed: () {
                 GlobalMethods.navigateTo(
                     ctx: context, routeName: FeedsScreen.routeName);
