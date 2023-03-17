@@ -10,6 +10,7 @@ class EmptyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
     final Color color = Utils(context).color;
+    final themeState = Utils(context).getTheme;
     return Scaffold(
       body: Column(
         children: [
@@ -30,7 +31,7 @@ class EmptyScreen extends StatelessWidget {
             onPressed: () {},
             child: TextWidget(
               text: "buttonText",
-              color: Colors.grey.shade300,
+              color: themeState ? Colors.grey.shade300 : Colors.grey.shade900,
               textSize: 20,
               isTitle: true,
             ),
