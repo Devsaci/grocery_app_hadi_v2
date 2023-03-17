@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/screens/orders/empty_screen.dart';
+import 'package:grocery_app_hadi_v1/widgets/empty_screen.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
 import '../../services/utils.dart';
