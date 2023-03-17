@@ -10,6 +10,12 @@ class EmptyScreen extends StatelessWidget {
         children: [
           const SizedBox(height: 50),
           Image.asset("assets/images/cart.png"),
+          const SizedBox(height: 10),
+          const Text(
+            'Whoops!',
+            style: TextStyle(
+                color: Colors.red, fontSize: 40, fontWeight: FontWeight.w700),
+          ),
         ],
       ),
     );
