@@ -30,6 +30,10 @@ class EmptyScreen extends StatelessWidget {
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                side: const BorderSide(color: Colors.black, width: 3),
+              ),
             ),
             onPressed: () {},
             child: TextWidget(
