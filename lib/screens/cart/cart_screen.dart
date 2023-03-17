@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/screens/orders/empty_screen.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 
 import '../../services/utils.dart';
@@ -35,22 +36,24 @@ class CartScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          _checkout(ctx: context),
-          Expanded(
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (ctx, index) {
-                return const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: CartWidget(),
-                );
-              },
+      body: _isEmpty
+          ? const EmptyScreen()
+          : Column(
+              children: [
+                _checkout(ctx: context),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (ctx, index) {
+                      return const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: CartWidget(),
+                      );
+                    },
+                  ),
+                ),
+              ],
             ),
-          ),
-        ],
-      ),
     );
   }
 
