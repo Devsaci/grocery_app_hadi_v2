@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../services/utils.dart';
+import '../../widgets/text_widget.dart';
+
 class EmptyScreen extends StatelessWidget {
   const EmptyScreen({super.key});
 
@@ -16,6 +19,8 @@ class EmptyScreen extends StatelessWidget {
             style: TextStyle(
                 color: Colors.red, fontSize: 40, fontWeight: FontWeight.w700),
           ),
+          const SizedBox(height: 20),
+          TextWidget(text: "title", color: Colors.cyan, textSize: 20),
         ],
       ),
     );
