@@ -36,13 +36,14 @@ class EmptyScreen extends StatelessWidget {
             SizedBox(height: size.height * 0.1),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  side: const BorderSide(color: Colors.black, width: 3),
-                ),
-                backgroundColor: Theme.of(context).colorScheme.secondary,
-              ),
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                    side: const BorderSide(color: Colors.black, width: 3),
+                  ),
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 40, vertical: 10)),
               onPressed: () {
                 GlobalMethods.navigateTo(
                     ctx: context, routeName: FeedsScreen.routeName);
