@@ -28,7 +28,12 @@ class EmptyScreen extends StatelessWidget {
           SizedBox(height: size.height * 0.1),
           ElevatedButton(
             onPressed: () {},
-            child: TextWidget(text: "buttonText", color: color, textSize: 20),
+            child: TextWidget(
+              text: "buttonText",
+              color: Colors.grey.shade300,
+              textSize: 20,
+              isTitle: true,
+            ),
           )
         ],
       ),
