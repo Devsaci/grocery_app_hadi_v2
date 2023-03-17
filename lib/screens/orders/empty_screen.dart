@@ -28,7 +28,7 @@ class EmptyScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 50),
-            Image.asset("assets/images/cart.png"),
+            Image.asset(imagePath),
             const SizedBox(height: 10),
             const Text(
               'Whoops!',
@@ -36,9 +36,9 @@ class EmptyScreen extends StatelessWidget {
                   color: Colors.red, fontSize: 40, fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 20),
-            TextWidget(text: "title", color: Colors.cyan, textSize: 20),
+            TextWidget(text: title, color: Colors.cyan, textSize: 20),
             const SizedBox(height: 20),
-            TextWidget(text: "subtitle", color: Colors.cyan, textSize: 20),
+            TextWidget(text: subtitle, color: Colors.cyan, textSize: 20),
             SizedBox(height: size.height * 0.1),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -55,7 +55,7 @@ class EmptyScreen extends StatelessWidget {
                     ctx: context, routeName: FeedsScreen.routeName);
               },
               child: TextWidget(
-                text: "buttonText",
+                text: buttonText,
                 color: themeState ? Colors.grey.shade300 : Colors.grey.shade900,
                 textSize: 20,
                 isTitle: true,
