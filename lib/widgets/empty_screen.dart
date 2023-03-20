@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/inner_screens/feeds_screen.dart';
-import 'package:grocery_app_hadi_v1/services/global_methods.dart';
+import '../../inner_screens/feeds_screen.dart';
+import '../../services/global_methods.dart';
 
 import '../services/utils.dart';
 import 'text_widget.dart';
