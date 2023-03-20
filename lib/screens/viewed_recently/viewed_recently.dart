@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/screens/viewed_recently/viewed_widget.dart';
-import 'package:grocery_app_hadi_v1/services/global_methods.dart';
-import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import '../../screens/viewed_recently/viewed_widget.dart';
+import '../../services/global_methods.dart';
+import '../../widgets/back_widget.dart';
+import '../../widgets/text_widget.dart';
 
 import '../../services/utils.dart';
 import '../../widgets/empty_screen.dart';
