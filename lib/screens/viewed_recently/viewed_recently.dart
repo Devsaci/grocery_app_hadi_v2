@@ -22,54 +22,50 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
     Color color = Utils(context).color;
     bool _isEmpty = true;
     if (_isEmpty == true) {
-//return const EmptyScreen
+      return const EmptyScreen(
+        title: 'Your cart is empty',
+        subtitle: 'Add something and make me happy',
+        buttonText: 'Shop now',
+        imagePath: "assets/images/cart.png",
+      );
     } else {
-// return Scaffold
-    }
-
-    return const EmptyScreen(
-      title: 'Your cart is empty',
-      subtitle: 'Add something and make me happy',
-      buttonText: 'Shop now',
-      imagePath: "assets/images/cart.png",
-    );
-
-    Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-            onPressed: () {
-              GlobalMethods.warningDialog(
-                title: 'Empty your history?',
-                subtitle: 'Are you sure?',
-                fct: () {},
-                context: context,
-              );
-            },
-            icon: const Icon(
-              IconlyBroken.delete,
-            ),
+      return Scaffold(
+        appBar: AppBar(
+          actions: [
+            IconButton(
+              onPressed: () {
+                GlobalMethods.warningDialog(
+                  title: 'Empty your history?',
+                  subtitle: 'Are you sure?',
+                  fct: () {},
+                  context: context,
+                );
+              },
+              icon: const Icon(
+                IconlyBroken.delete,
+              ),
+              color: color,
+            )
+          ],
+          leading: const BackWidget(),
+          automaticallyImplyLeading: false,
+          elevation: 0,
+          centerTitle: true,
+          title: TextWidget(
+            text: "History",
             color: color,
-          )
-        ],
-        leading: const BackWidget(),
-        automaticallyImplyLeading: false,
-        elevation: 0,
-        centerTitle: true,
-        title: TextWidget(
-          text: "History",
-          color: color,
-          textSize: 20,
+            textSize: 20,
+          ),
+          backgroundColor:
+              Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
         ),
-        backgroundColor:
-            Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
-      ),
-      body: ListView.builder(
-        itemCount: 8,
-        itemBuilder: (ctx, index) {
-          return const ViewedRecentlyWidget();
-        },
-      ),
-    );
+        body: ListView.builder(
+          itemCount: 8,
+          itemBuilder: (ctx, index) {
+            return const ViewedRecentlyWidget();
+          },
+        ),
+      );
+    }
   }
 }
