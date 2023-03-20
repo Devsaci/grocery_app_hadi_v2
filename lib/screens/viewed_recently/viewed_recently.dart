@@ -26,7 +26,7 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
         title: 'Your cart is empty',
         subtitle: 'Add something and make me happy',
         buttonText: 'Shop now',
-        imagePath: "assets/images/cart.png",
+        imagePath: "assets/images/history.png",
       );
     } else {
       return Scaffold(
