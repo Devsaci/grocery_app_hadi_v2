@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:grocery_app_hadi_v1/screens/wishlist/wishlist_widget.dart';
-import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
+import '../../screens/wishlist/wishlist_widget.dart';
+import '../../widgets/back_widget.dart';
 
 import '../../services/global_methods.dart';
 import '../../services/utils.dart';

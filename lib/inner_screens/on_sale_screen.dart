@@ -1,8 +1,7 @@
 //30. Implement the sale screen
 
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
+import '../../widgets/back_widget.dart';
 
 import '../services/utils.dart';
 import '../widgets/on_sale_widget.dart';
@@ -20,7 +19,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
   @override
   Widget build(BuildContext context) {
     //32. Handle UI if there is no products on sale. (Create new UI to it)
-    bool _isEmpty = true;
+    bool _isEmpty = false;
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;

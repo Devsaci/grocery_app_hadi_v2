@@ -8,7 +8,7 @@ import '../../services/global_methods.dart';
 import '../../services/utils.dart';
 import '../../widgets/heart_btn.dart';
 import '../../widgets/price_widget.dart';
-import '.././widgets/text_widget.dart';
+import '../../widgets/text_widget.dart';
 
 class OnSaleWidget extends StatefulWidget {
   const OnSaleWidget({Key? key}) : super(key: key);
