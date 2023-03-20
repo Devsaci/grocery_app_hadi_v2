@@ -6,6 +6,7 @@ import 'package:grocery_app_hadi_v1/widgets/back_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
+import '../../widgets/empty_screen.dart';
 
 class ViewedRecentlyScreen extends StatefulWidget {
   static const routeName = '/ViewedRecentlyScreen';
@@ -19,7 +20,21 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
   @override
   Widget build(BuildContext context) {
     Color color = Utils(context).color;
-    return Scaffold(
+    bool _isEmpty = true;
+    if (_isEmpty == true) {
+//return const EmptyScreen
+    } else {
+// return Scaffold
+    }
+
+    return const EmptyScreen(
+      title: 'Your cart is empty',
+      subtitle: 'Add something and make me happy',
+      buttonText: 'Shop now',
+      imagePath: "assets/images/cart.png",
+    );
+
+    Scaffold(
       appBar: AppBar(
         actions: [
           IconButton(
