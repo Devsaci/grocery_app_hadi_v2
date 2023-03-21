@@ -15,7 +15,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       backgroundColor: Colors.amber,
       body: Stack(
-        children: [],
+        children: [
+          Image.asset("name"),
+        ],
       ),
     );
   }
