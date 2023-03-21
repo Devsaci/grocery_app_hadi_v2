@@ -20,6 +20,27 @@ class _LoginScreenState extends State<LoginScreen> {
           Container(
             color: Colors.black.withOpacity(0.7),
           ),
+          Container(),
+          Column(
+            children: [
+              const SizedBox(height: 120.0),
+              TextWidget(
+                text: 'Welcome Back',
+                color: Colors.white,
+                textSize: 30,
+                isTitle: true,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              TextWidget(
+                text: "Sign in to continue",
+                color: Colors.white,
+                textSize: 18,
+                isTitle: false,
+              ),
+            ],
+          ),
         ],
       ),
     );
