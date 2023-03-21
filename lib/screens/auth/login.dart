@@ -13,14 +13,17 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      //backgroundColor: Colors.amber,
       body: Stack(
         children: [
-          Image.asset("name"),
-          Container(
-            color: Colors.black.withOpacity(0.7),
+          Image.asset(
+            "assets/images/offres/Offer1.jpg",
+            fit: BoxFit.cover,
+            height: 900,
           ),
-          Container(),
+          Container(
+            color: Colors.black.withOpacity(0.5),
+          ),
           Column(
             children: [
               const SizedBox(height: 120.0),
