@@ -66,9 +66,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         onTap: _selectedPage,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: _selectedIndex == 0
-                ? const Icon(IconlyBold.home)
-                : const Icon(IconlyLight.home),
+            icon: Icon(_selectedIndex == 1
+                ? IconlyBold.category
+                : IconlyLight.category),
             label: "Home",
           ),
           BottomNavigationBarItem(
