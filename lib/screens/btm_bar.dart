@@ -72,9 +72,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: _selectedIndex == 1
-                ? const Icon(IconlyBold.category)
-                : const Icon(IconlyLight.category),
+            icon: Icon(_selectedIndex == 1
+                ? IconlyBold.category
+                : IconlyLight.category),
             label: "Categories",
           ),
           BottomNavigationBarItem(
