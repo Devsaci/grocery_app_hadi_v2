@@ -17,6 +17,9 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Stack(
         children: [
           Image.asset("name"),
+          Container(
+            color: Colors.black.withOpacity(0.7),
+          ),
         ],
       ),
     );
