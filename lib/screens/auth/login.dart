@@ -23,6 +23,15 @@ class _LoginScreenState extends State<LoginScreen> {
             textSize: 30,
             isTitle: true,
           ),
+          const SizedBox(
+            height: 8,
+          ),
+          TextWidget(
+            text: "Sign in to continue",
+            color: Colors.white,
+            textSize: 18,
+            isTitle: false,
+          ),
         ],
       ),
     );
