@@ -18,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Image.asset(
             "assets/images/offres/Offer1.jpg",
-            fit: BoxFit.cover,
+            fit: BoxFit.fitHeight,
             height: 900,
           ),
           Container(
