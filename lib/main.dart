@@ -7,6 +7,7 @@ import 'inner_screens/feeds_screen.dart';
 import 'inner_screens/on_sale_screen.dart';
 import 'inner_screens/product_details.dart';
 import 'provider/dark_theme_provider.dart';
+import 'screens/auth/login.dart';
 import 'screens/btm_bar.dart';
 import 'screens/orders/orders_screen.dart';
 import 'screens/viewed_recently/viewed_recently.dart';
@@ -59,7 +60,7 @@ class _MyAppState extends State<MyApp> {
             debugShowCheckedModeBanner: true,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const BottomBarScreen(),
+            home: const LoginScreen(),
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),
