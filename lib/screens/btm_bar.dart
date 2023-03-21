@@ -66,9 +66,8 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         onTap: _selectedPage,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 1
-                ? IconlyBold.category
-                : IconlyLight.category),
+            icon:
+                Icon(_selectedIndex == 0 ? IconlyBold.home : IconlyLight.home),
             label: "Home",
           ),
           BottomNavigationBarItem(
@@ -78,15 +77,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             label: "Categories",
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 1
-                ? IconlyBold.category
-                : IconlyLight.category),
+            icon: Icon(_selectedIndex == 1 ? IconlyBold.buy : IconlyLight.buy),
             label: "Cart",
           ),
           BottomNavigationBarItem(
-            icon: Icon(_selectedIndex == 1
-                ? IconlyBold.category
-                : IconlyLight.category),
+            icon: Icon(
+                _selectedIndex == 2 ? IconlyBold.user2 : IconlyLight.user2),
             label: "User",
           ),
         ],
