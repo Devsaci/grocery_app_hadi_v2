@@ -84,9 +84,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             label: "Cart",
           ),
           BottomNavigationBarItem(
-            icon: _selectedIndex == 3
-                ? const Icon(IconlyBold.user2)
-                : const Icon(IconlyLight.user2),
+            icon: Icon(_selectedIndex == 1
+                ? IconlyBold.category
+                : IconlyLight.category),
             label: "User",
           ),
         ],
