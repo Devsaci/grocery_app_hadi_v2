@@ -1,4 +1,6 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/const/Constss.dart';
 
 import '../../widgets/text_widget.dart';
 
@@ -16,10 +18,15 @@ class _LoginScreenState extends State<LoginScreen> {
       //backgroundColor: Colors.amber,
       body: Stack(
         children: [
-          Image.asset(
-            "assets/images/offres/Offer1.jpg",
-            fit: BoxFit.fitHeight,
-            height: 900,
+          Swiper(
+            itemBuilder: (context, index) {
+              return Image.asset(
+                Constss.authImagesPaths[index],
+                fit: BoxFit.fitHeight,
+                height: 900,
+              );
+            },
+            itemCount: Constss.authImagesPaths.length,
           ),
           Container(
             color: Colors.black.withOpacity(0.5),
