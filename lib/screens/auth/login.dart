@@ -80,6 +80,13 @@ class _LoginScreenState extends State<LoginScreen> {
                               .requestFocus(_passFocusNode),
                           controller: _emailTextController,
                           keyboardType: TextInputType.emailAddress,
+                          validator: (value) {
+                            if (value!.isEmpty || !value.contains('@')) {
+                              return 'Please enter a valid email address';
+                            } else {
+                              return null;
+                            }
+                          },
                         ),
                       ],
                     ),
