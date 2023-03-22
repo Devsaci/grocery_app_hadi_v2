@@ -96,6 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
+                            ),
                           ),
                         ),
                       ],
