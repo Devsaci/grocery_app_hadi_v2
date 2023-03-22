@@ -2,6 +2,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
+import '../const/Constss.dart';
 import '../inner_screens/feeds_screen.dart';
 import '../inner_screens/on_sale_screen.dart';
 import '../services/global_methods.dart';
@@ -18,12 +19,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final List<String> _offerImages = [
-    'assets/images/offres/Offer1.jpg',
-    'assets/images/offres/Offer2.jpg',
-    'assets/images/offres/Offer3.jpg',
-    'assets/images/offres/Offer4.jpg'
-  ];
+  // final List<String> offerImages = [
+  //   'assets/images/offres/Offer1.jpg',
+  //   'assets/images/offres/Offer2.jpg',
+  //   'assets/images/offres/Offer3.jpg',
+  //   'assets/images/offres/Offer4.jpg'
+  // ];
 
   //
   @override
@@ -42,10 +43,10 @@ class _HomeScreenState extends State<HomeScreen> {
               height: size.height * 0.33,
               child: Swiper(
                 autoplay: true,
-                itemCount: _offerImages.length,
+                itemCount: Constss.offerImages.length,
                 itemBuilder: (BuildContext context, index) {
                   return Image.asset(
-                    _offerImages[index],
+                    Constss.offerImages[index],
                     fit: BoxFit.fill,
                   );
                 },
