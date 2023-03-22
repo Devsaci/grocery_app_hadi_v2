@@ -35,6 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
             color: Colors.teal.withOpacity(0.3),
           ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 120.0),
               TextWidget(
