@@ -79,6 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onEditingComplete: () => FocusScope.of(context)
                               .requestFocus(_passFocusNode),
                           controller: _emailTextController,
+                          keyboardType: TextInputType.emailAddress,
                         ),
                       ],
                     ),
