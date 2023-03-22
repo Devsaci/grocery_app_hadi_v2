@@ -20,6 +20,8 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Swiper(
             duration: 800,
+            autoplay: true,
+            autoplayDelay: 6000,
             itemBuilder: (context, index) {
               return Image.asset(
                 Constss.authImagesPaths[index],
