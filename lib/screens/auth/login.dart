@@ -49,15 +49,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     textSize: 25,
                     isTitle: true,
                   ),
-                  const SizedBox(
-                    height: 8,
-                  ),
+                  const SizedBox(height: 8),
                   TextWidget(
                     text: "Sign in to continue",
                     color: Colors.white,
                     textSize: 18,
                     isTitle: false,
                   ),
+                  const SizedBox(height: 30.0),
+                  //emailAddress
+                  Form(child: Column())
                 ],
               ),
             ),
