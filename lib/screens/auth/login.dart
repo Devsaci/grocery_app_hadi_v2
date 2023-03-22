@@ -12,6 +12,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  var _formKey;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +60,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 30.0),
                   //emailAddress
-                  Form(child: Column())
+                  Form(
+                    key: _formKey,
+                    child: Column(),
+                  )
                 ],
               ),
             ),
