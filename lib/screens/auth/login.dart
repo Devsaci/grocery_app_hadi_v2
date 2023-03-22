@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
             itemCount: Constss.authImagesPaths.length,
           ),
           Container(
-            color: Colors.black.withOpacity(0.5),
+            color: Colors.teal.withOpacity(0.3),
           ),
           Column(
             children: [
