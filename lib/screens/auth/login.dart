@@ -70,7 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   //emailAddress
                   Form(
                     key: _formKey,
-                    child: Column(),
+                    child: Column(
+                      children: [
+                        TextFormField(),
+                      ],
+                    ),
                   )
                 ],
               ),
