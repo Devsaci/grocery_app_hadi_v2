@@ -14,6 +14,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   var _formKey;
   final _passFocusNode = FocusNode();
+  final _emailTextController = TextEditingController();
 
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState.validate();
@@ -77,6 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           textInputAction: TextInputAction.next,
                           onEditingComplete: () => FocusScope.of(context)
                               .requestFocus(_passFocusNode),
+                          controller: _emailTextController,
                         ),
                       ],
                     ),
