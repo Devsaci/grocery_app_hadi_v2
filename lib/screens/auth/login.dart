@@ -35,28 +35,31 @@ class _LoginScreenState extends State<LoginScreen> {
             color: Colors.black87.withOpacity(0.3),
           ),
           SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                const SizedBox(height: 120.0),
-                TextWidget(
-                  text: 'Welcome Back',
-                  color: Colors.white,
-                  textSize: 25,
-                  isTitle: true,
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                TextWidget(
-                  text: "Sign in to continue",
-                  color: Colors.white,
-                  textSize: 18,
-                  isTitle: false,
-                ),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  const SizedBox(height: 120.0),
+                  TextWidget(
+                    text: 'Welcome Back',
+                    color: Colors.white,
+                    textSize: 25,
+                    isTitle: true,
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  TextWidget(
+                    text: "Sign in to continue",
+                    color: Colors.white,
+                    textSize: 18,
+                    isTitle: false,
+                  ),
+                ],
+              ),
             ),
           ),
         ],
