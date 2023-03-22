@@ -87,6 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               return null;
                             }
                           },
+                          style: const TextStyle(color: Colors.white),
                         ),
                       ],
                     ),
