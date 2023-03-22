@@ -88,6 +88,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             }
                           },
                           style: const TextStyle(color: Colors.white),
+                          decoration: const InputDecoration(
+                            hintText: 'Email',
+                            hintStyle: TextStyle(color: Colors.white),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                          ),
                         ),
                       ],
                     ),
