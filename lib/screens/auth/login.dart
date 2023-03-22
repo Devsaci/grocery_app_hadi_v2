@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
             itemCount: Constss.authImagesPaths.length,
           ),
           Container(
-            color: Colors.teal.withOpacity(0.3),
+            color: Colors.black87.withOpacity(0.3),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
               TextWidget(
                 text: 'Welcome Back',
                 color: Colors.white,
-                textSize: 30,
+                textSize: 25,
                 isTitle: true,
               ),
               const SizedBox(
