@@ -19,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Stack(
         children: [
           Swiper(
+            duration: 800,
             itemBuilder: (context, index) {
               return Image.asset(
                 Constss.authImagesPaths[index],
