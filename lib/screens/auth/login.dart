@@ -72,7 +72,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     key: _formKey,
                     child: Column(
                       children: [
-                        TextFormField(),
+                        TextFormField(
+                          textInputAction: TextInputAction.next,
+                        ),
                       ],
                     ),
                   )
