@@ -14,6 +14,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   var _formKey;
 
+  void _submitFormOnLogin() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
