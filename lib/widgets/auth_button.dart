@@ -18,10 +18,10 @@ class AuthButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       child: TextWidget(
-            text: buttonText,
-            textSize: 18,
-            color: Colors.white,
-          )),
+        text: buttonText,
+        textSize: 18,
+        color: Colors.white,
+      ),
     );
   }
 }
