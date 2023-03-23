@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _obscureText = true;
 
   void _submitFormOnLogin() {
-    final isValid = _formKey.currentState.validate();
+    final isValid = _formKey.currentState!.validate();
     FocusScope.of(context).unfocus();
     if (isValid) {
       print("The forme is Valide");
