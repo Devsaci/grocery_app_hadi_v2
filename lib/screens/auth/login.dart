@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _emailTextController = TextEditingController();
   final _passTextController = TextEditingController();
 
-  final _obscureText = true;
+  var _obscureText = true;
 
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState!.validate();
@@ -120,14 +120,22 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                           style: const TextStyle(color: Colors.white),
                           obscureText: _obscureText,
-                          decoration: const InputDecoration(
-                            suffixIcon: Icon(Icons.visibility),
+                          decoration: InputDecoration(
+                            suffixIcon: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    _obscureText = !_obscureText;
+                                  });
+                                },
+                                child: const Icon(
+                                  Icons.visibility,
+                                )),
                             hintText: 'Password',
-                            hintStyle: TextStyle(color: Colors.white),
-                            enabledBorder: UnderlineInputBorder(
+                            hintStyle: const TextStyle(color: Colors.white),
+                            enabledBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ),
-                            focusedBorder: UnderlineInputBorder(
+                            focusedBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ),
                           ),
