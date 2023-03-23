@@ -127,8 +127,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                     _obscureText = !_obscureText;
                                   });
                                 },
-                                child: const Icon(
-                                  Icons.visibility,
+                                child: Icon(
+                                  _obscureText
+                                      ? Icons.visibility_off
+                                      : Icons.visibility,
+                                  color: Colors.amberAccent,
                                 )),
                             hintText: 'Password',
                             hintStyle: const TextStyle(color: Colors.white),
