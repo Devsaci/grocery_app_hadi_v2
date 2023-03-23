@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
 import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
 
+import '../../widgets/google_button.dart';
 import '../../widgets/text_widget.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -169,6 +170,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     buttonText: 'Login',
                     primary: Colors.white54,
                   ),
+                  const SizedBox(height: 10),
+                  const GoogleButton(),
+                  const SizedBox(height: 10),
                 ],
               ),
             ),
