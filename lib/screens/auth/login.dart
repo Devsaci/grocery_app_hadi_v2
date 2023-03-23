@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
             itemCount: Constss.authImagesPaths.length,
           ),
           Container(
-            color: Colors.black87.withOpacity(0.3),
+            color: Colors.black.withOpacity(0.8),
           ),
           SingleChildScrollView(
             child: Padding(
@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           controller: _passTextController,
                           keyboardType: TextInputType.visiblePassword,
                           validator: (value) {
-                            if (value!.isEmpty || !value.contains('@')) {
+                            if (value!.isEmpty || value.length < 7) {
                               return 'Please enter a valid  Password';
                             } else {
                               return null;
