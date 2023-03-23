@@ -15,6 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
   var _formKey;
   final _passFocusNode = FocusNode();
   final _emailTextController = TextEditingController();
+  final _passTextController = TextEditingController();
 
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState.validate();
@@ -69,11 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     isTitle: false,
                   ),
                   const SizedBox(height: 30.0),
-                  //emailAddress
                   Form(
                     key: _formKey,
                     child: Column(
                       children: [
+                        //emailAddress
                         TextFormField(
                           textInputAction: TextInputAction.next,
                           onEditingComplete: () => FocusScope.of(context)
@@ -90,6 +91,33 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: const TextStyle(color: Colors.white),
                           decoration: const InputDecoration(
                             hintText: 'Email',
+                            hintStyle: TextStyle(color: Colors.white),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        //Password
+                        const SizedBox(height: 12),
+                        TextFormField(
+                          textInputAction: TextInputAction.next,
+                          onEditingComplete: () => FocusScope.of(context)
+                              .requestFocus(_passFocusNode),
+                          controller: _passTextController,
+                          keyboardType: TextInputType.visiblePassword,
+                          validator: (value) {
+                            if (value!.isEmpty || !value.contains('@')) {
+                              return 'Please enter a valid  Password';
+                            } else {
+                              return null;
+                            }
+                          },
+                          style: const TextStyle(color: Colors.white),
+                          decoration: const InputDecoration(
+                            hintText: 'Password',
                             hintStyle: TextStyle(color: Colors.white),
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
