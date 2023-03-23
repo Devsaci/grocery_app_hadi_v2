@@ -1,6 +1,7 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
+import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
 
 import '../../widgets/text_widget.dart';
 
@@ -163,6 +164,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(height: 18),
+                  AuthButton(
+                    fct: () {},
+                    buttonText: 'Login',
+                    primary: Colors.white54,
+                  )
                 ],
               ),
             ),
