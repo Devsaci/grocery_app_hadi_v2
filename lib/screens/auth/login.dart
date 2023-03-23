@@ -80,6 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onEditingComplete: () => FocusScope.of(context)
                               .requestFocus(_passFocusNode),
                           controller: _emailTextController,
+                          focusNode: _passFocusNode,
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) {
                             if (value!.isEmpty || !value.contains('@')) {
@@ -104,8 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(height: 12),
                         TextFormField(
                           textInputAction: TextInputAction.done,
-                          onEditingComplete: () => FocusScope.of(context)
-                              .requestFocus(_passFocusNode),
+                          onEditingComplete: () => _submitFormOnLogin(),
                           controller: _passTextController,
                           keyboardType: TextInputType.visiblePassword,
                           validator: (value) {
