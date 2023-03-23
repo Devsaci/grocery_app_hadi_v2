@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         //Password
                         const SizedBox(height: 12),
                         TextFormField(
-                          textInputAction: TextInputAction.next,
+                          textInputAction: TextInputAction.done,
                           onEditingComplete: () => FocusScope.of(context)
                               .requestFocus(_passFocusNode),
                           controller: _passTextController,
