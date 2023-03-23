@@ -17,6 +17,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final _emailTextController = TextEditingController();
   final _passTextController = TextEditingController();
 
+  var _obscureText = true;
+
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState.validate();
     FocusScope.of(context).unfocus();
@@ -81,6 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               .requestFocus(_passFocusNode),
                           controller: _emailTextController,
                           focusNode: _passFocusNode,
+                          obscureText: _obscureText,
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) {
                             if (value!.isEmpty || !value.contains('@')) {
