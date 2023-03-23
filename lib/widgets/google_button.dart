@@ -11,11 +11,14 @@ class GoogleButton extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              child: Image.asset("assets/images/google.png"),
+              color: Colors.white,
               width: 40.0,
+              child: Image.asset("assets/images/google.png"),
             ),
+            const SizedBox(width: 20),
             TextWidget(
               text: 'Sign in with google',
               color: Colors.white,
