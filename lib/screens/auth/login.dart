@@ -12,12 +12,12 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  var _formKey;
+  final _formKey = GlobalKey<FormState>();
   final _passFocusNode = FocusNode();
   final _emailTextController = TextEditingController();
   final _passTextController = TextEditingController();
 
-  var _obscureText = true;
+  final _obscureText = true;
 
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState.validate();
