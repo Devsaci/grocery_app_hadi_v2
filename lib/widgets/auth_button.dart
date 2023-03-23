@@ -7,7 +7,7 @@ class AuthButton extends StatelessWidget {
     super.key,
     required this.fct,
     required this.buttonText,
-    required this.primary,
+    this.primary = Colors.white38,
   });
   final Function fct;
   final String buttonText;
