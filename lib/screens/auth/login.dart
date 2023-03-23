@@ -145,6 +145,18 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Forget password?',
+                      maxLines: 1,
+                      style: TextStyle(
+                          color: Colors.lightBlue,
+                          fontSize: 18,
+                          decoration: TextDecoration.underline,
+                          fontStyle: FontStyle.italic),
+                    ),
                   )
                 ],
               ),
