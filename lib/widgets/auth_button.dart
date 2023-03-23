@@ -15,15 +15,18 @@ class AuthButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: primary, // background (button) color
-      ),
-      onPressed: () {},
-      child: TextWidget(
-        text: buttonText,
-        textSize: 18,
-        color: Colors.white,
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: primary, // background (button) color
+        ),
+        onPressed: () {},
+        child: TextWidget(
+          text: buttonText,
+          textSize: 18,
+          color: Colors.white,
+        ),
       ),
     );
   }
