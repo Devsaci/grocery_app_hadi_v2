@@ -7,11 +7,15 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.blue,
       child: InkWell(
         onTap: () {},
         child: Row(
           children: [
-            Image.asset("name"),
+            Container(
+              child: Image.asset("assets/images/google.png"),
+              width: 40.0,
+            ),
             TextWidget(
               text: 'Sign in with google',
               color: Colors.white,
