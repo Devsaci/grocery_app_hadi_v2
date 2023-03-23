@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'text_widget.dart';
+
 class AuthButton extends StatelessWidget {
   const AuthButton({
     super.key,
@@ -15,7 +17,11 @@ class AuthButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {},
-      child: null,
+      child: TextWidget(
+            text: buttonText,
+            textSize: 18,
+            color: Colors.white,
+          )),
     );
   }
 }
