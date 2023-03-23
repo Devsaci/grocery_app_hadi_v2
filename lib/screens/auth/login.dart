@@ -83,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               .requestFocus(_passFocusNode),
                           controller: _emailTextController,
                           focusNode: _passFocusNode,
-                          obscureText: _obscureText,
+                          //obscureText: _obscureText,
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) {
                             if (value!.isEmpty || !value.contains('@')) {
@@ -119,7 +119,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             }
                           },
                           style: const TextStyle(color: Colors.white),
+                          obscureText: _obscureText,
                           decoration: const InputDecoration(
+                            suffixIcon: Icon(Icons.visibility),
                             hintText: 'Password',
                             hintStyle: TextStyle(color: Colors.white),
                             enabledBorder: UnderlineInputBorder(
