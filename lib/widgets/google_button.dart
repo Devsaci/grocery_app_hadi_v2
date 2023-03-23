@@ -12,6 +12,11 @@ class GoogleButton extends StatelessWidget {
         child: Row(
           children: [
             Image.asset("name"),
+            TextWidget(
+              text: 'Sign in with google',
+              color: Colors.white,
+              textSize: 18,
+            ),
           ],
         ),
       ),
