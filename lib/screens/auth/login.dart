@@ -168,7 +168,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     fct: () {},
                     buttonText: 'Login',
                     primary: Colors.white54,
-                  )
+                  ),
                 ],
               ),
             ),
