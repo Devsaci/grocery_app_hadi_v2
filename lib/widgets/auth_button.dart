@@ -13,6 +13,9 @@ class AuthButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox();
+    return ElevatedButton(
+      onPressed: () {},
+      child: null,
+    );
   }
 }
