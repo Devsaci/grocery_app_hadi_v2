@@ -172,7 +172,34 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 10),
                   const GoogleButton(),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 20),
+                  Row(
+                    children: [
+                      const Expanded(
+                        child: Divider(
+                          color: Colors.white,
+                          thickness: 2,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      TextWidget(
+                        text: 'OR',
+                        color: Colors.white,
+                        textSize: 18,
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      const Expanded(
+                        child: Divider(
+                          color: Colors.white,
+                          thickness: 2,
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
