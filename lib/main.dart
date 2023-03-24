@@ -58,7 +58,7 @@ class _MyAppState extends State<MyApp> {
             debugShowCheckedModeBanner: true,
             title: 'Flutter Demo',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const RegisterScreen(),
+            home: const LoginScreen(),
             routes: {
               OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
               FeedsScreen.routeName: (ctx) => const FeedsScreen(),

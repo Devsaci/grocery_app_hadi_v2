@@ -2,10 +2,10 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/const/Constss.dart';
-import 'package:grocery_app_hadi_v1/screens/auth/register.dart';
-import 'package:grocery_app_hadi_v1/services/global_methods.dart';
-import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
+import '../../const/Constss.dart';
+import '../../screens/auth/register.dart';
+import '../../services/global_methods.dart';
+import '../../widgets/auth_button.dart';
 import '../../widgets/google_button.dart';
 import '../../widgets/text_widget.dart';
 
@@ -223,10 +223,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: const TextStyle(color: Colors.white, fontSize: 18),
                       children: [
                         TextSpan(
-                          text: '   Sign up',
+                          text: '      Sign up',
                           style: const TextStyle(
                               color: Colors.lightBlue,
-                              fontSize: 18,
+                              fontSize: 25,
                               fontWeight: FontWeight.w600),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
