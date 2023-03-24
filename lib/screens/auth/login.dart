@@ -1,4 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
@@ -26,7 +27,9 @@ class _LoginScreenState extends State<LoginScreen> {
     final isValid = _formKey.currentState!.validate();
     FocusScope.of(context).unfocus();
     if (isValid) {
-      print("The forme is Valide");
+      if (kDebugMode) {
+        print("The forme is Valide");
+      }
     }
   }
 
