@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'package:provider/provider.dart';
-
 import 'const/theme_data.dart';
 import 'inner_screens/feeds_screen.dart';
 import 'inner_screens/on_sale_screen.dart';
 import 'inner_screens/product_details.dart';
 import 'provider/dark_theme_provider.dart';
 import 'screens/auth/login.dart';
-import 'screens/btm_bar.dart';
 import 'screens/orders/orders_screen.dart';
 import 'screens/viewed_recently/viewed_recently.dart';
 import 'screens/wishlist/wishlist_screen.dart';
