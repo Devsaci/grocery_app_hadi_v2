@@ -23,6 +23,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
   var _obscureText = true;
 
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
   void _submitFormOnLogin() {
     final isValid = _formKey.currentState!.validate();
     FocusScope.of(context).unfocus();
