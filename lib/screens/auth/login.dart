@@ -206,11 +206,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 20),
                   RichText(
                     text: TextSpan(
-                      text: 'Don\'t have an account?',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+                      text: 'Don\'t have an account ?',
+                      style: const TextStyle(color: Colors.white, fontSize: 18),
                       children: [
                         TextSpan(
-                          text: 'Sign up',
+                          text: '   Sign up',
                           style: const TextStyle(
                               color: Colors.lightBlue,
                               fontSize: 18,
