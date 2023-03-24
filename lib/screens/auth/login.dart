@@ -1,4 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
 import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
@@ -204,18 +205,20 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 20),
                   RichText(
-                    text: const TextSpan(
-                        text: 'Don\'t have an account?',
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                        children: [
-                          TextSpan(
-                            text: '  Sign up',
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600),
-                          )
-                        ]),
+                    text: TextSpan(
+                      text: 'Don\'t have an account?',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                      children: [
+                        TextSpan(
+                          text: 'Sign up',
+                          style: const TextStyle(
+                              color: Colors.lightBlue,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600),
+                          recognizer: TapGestureRecognizer()..onTap = () {},
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
