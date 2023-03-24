@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
+import 'package:grocery_app_hadi_v1/screens/auth/register.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
 import '../../widgets/google_button.dart';
 import '../../widgets/text_widget.dart';
@@ -225,7 +227,12 @@ class _LoginScreenState extends State<LoginScreen> {
                               color: Colors.lightBlue,
                               fontSize: 18,
                               fontWeight: FontWeight.w600),
-                          recognizer: TapGestureRecognizer()..onTap = () {},
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              GlobalMethods.navigateTo(
+                                  ctx: context,
+                                  routeName: RegisterScreen.routeName);
+                            },
                         ),
                       ],
                     ),
