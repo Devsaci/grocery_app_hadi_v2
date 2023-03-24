@@ -10,6 +10,7 @@ import '../../widgets/google_button.dart';
 import '../../widgets/text_widget.dart';
 
 class LoginScreen extends StatefulWidget {
+  static const routeName = '/LoginScreen';
   const LoginScreen({super.key});
 
   @override

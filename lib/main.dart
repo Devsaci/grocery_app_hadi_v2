@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/screens/auth/register.dart';
+import '../../screens/auth/register.dart';
 import 'package:provider/provider.dart';
 import 'const/theme_data.dart';
 import 'inner_screens/feeds_screen.dart';
@@ -68,6 +68,7 @@ class _MyAppState extends State<MyApp> {
               ViewedRecentlyScreen.routeName: (ctx) =>
                   const ViewedRecentlyScreen(),
               RegisterScreen.routeName: (ctx) => const RegisterScreen(),
+              LoginScreen.routeName: (ctx) => const LoginScreen(),
             },
           );
         },
