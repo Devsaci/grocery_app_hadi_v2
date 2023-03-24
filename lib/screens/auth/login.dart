@@ -170,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     buttonText: 'Login',
                     primary: Colors.white54,
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 20),
                   const GoogleButton(),
                   const SizedBox(height: 20),
                   Row(
@@ -181,13 +181,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           thickness: 2,
                         ),
                       ),
-                      const SizedBox(width: 5),
+                      const SizedBox(height: 5),
                       TextWidget(
                         text: 'OR',
                         color: Colors.white,
                         textSize: 18,
                       ),
-                      const SizedBox(width: 5),
+                      const SizedBox(height: 5),
                       const Expanded(
                         child: Divider(
                           color: Colors.white,
@@ -196,11 +196,26 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ],
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(height: 10),
                   AuthButton(
                     fct: () {},
                     buttonText: 'Continue as a guest',
                     primary: Colors.black87,
+                  ),
+                  const SizedBox(height: 20),
+                  RichText(
+                    text: const TextSpan(
+                        text: 'Don\'t have an account?',
+                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        children: [
+                          TextSpan(
+                            text: '  Sign up',
+                            style: TextStyle(
+                                color: Colors.lightBlue,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600),
+                          )
+                        ]),
                   ),
                 ],
               ),
