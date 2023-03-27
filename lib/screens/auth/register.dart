@@ -12,7 +12,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [],
+      children: [
+        Image.asset('assets/images/landing/buy-on-laptop.jpg'),
+      ],
     );
   }
 }
