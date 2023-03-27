@@ -17,7 +17,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
       children: [
         Swiper(
           itemBuilder: (context, index) {
-            return Image.asset(Constss.authImagesPaths[index]);
+            return Image.asset(
+              Constss.authImagesPaths[index],
+              fit: BoxFit.cover,
+            );
           },
           autoplay: true,
           itemCount: Constss.authImagesPaths.length,
