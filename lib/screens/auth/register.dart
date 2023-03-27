@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
 
+import '../../services/utils.dart';
+
 class RegisterScreen extends StatefulWidget {
   static const routeName = '/RegisterScreen';
   const RegisterScreen({super.key});
@@ -14,6 +16,7 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
+    final theme = Utils(context).getTheme;
     return Scaffold(
       body: Stack(
         children: [
@@ -40,9 +43,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Navigator.canPop(context) ? Navigator.pop(context) : null;
                 },
                 borderRadius: BorderRadius.circular(10),
-                child: const Icon(
+                child: Icon(
                   IconlyLight.arrowLeft2,
-                  color: Colors.white,
+                  color: theme == true ? Colors.white : Colors.black,
                   size: 25,
                 ),
               )
