@@ -14,34 +14,39 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Swiper(
-          duration: 1800,
-          autoplayDelay: 6000,
-          itemBuilder: (context, index) {
-            return Image.asset(
-              Constss.authImagesPaths[index],
-              fit: BoxFit.cover,
-            );
-          },
-          autoplay: true,
-          itemCount: Constss.authImagesPaths.length,
-        ),
-        Container(
-          color: Colors.black.withOpacity(0.7),
-        ),
-        const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              IconlyLight.arrowLeft2,
-              color: Colors.white,
-              size: 25,
-            )
-          ],
-        )
-      ],
+    return Scaffold(
+      body: Stack(
+        children: [
+          Swiper(
+            duration: 1800,
+            autoplayDelay: 6000,
+            itemBuilder: (context, index) {
+              return Image.asset(
+                Constss.authImagesPaths[index],
+                fit: BoxFit.cover,
+              );
+            },
+            autoplay: true,
+            itemCount: Constss.authImagesPaths.length,
+          ),
+          Container(
+            color: Colors.black.withOpacity(0.7),
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                child: Icon(
+                  IconlyLight.arrowLeft2,
+                  color: Colors.white,
+                  size: 25,
+                ),
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
