@@ -37,7 +37,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.canPop(context) ? Navigator.pop(context) : null;
                 },
                 borderRadius: BorderRadius.circular(10),
                 child: const Icon(
