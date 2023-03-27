@@ -31,9 +31,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         Container(
           color: Colors.black.withOpacity(0.7),
         ),
-        Column(
+        const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          
           children: [
             Icon(
               IconlyLight.arrowLeft2,
