@@ -27,6 +27,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
           autoplay: true,
           itemCount: Constss.authImagesPaths.length,
         ),
+        Container(
+          color: Colors.black.withOpacity(0.7),
+        )
       ],
     );
   }
