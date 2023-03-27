@@ -45,7 +45,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 borderRadius: BorderRadius.circular(10),
                 child: Icon(
                   IconlyLight.arrowLeft2,
-                  color: theme == true ? Colors.white : Colors.black,
+                  //todo ? Colors.white : Colors.black,
+                  color: theme == true ? Colors.black : Colors.white,
                   size: 25,
                 ),
               )
