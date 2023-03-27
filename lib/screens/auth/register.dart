@@ -58,6 +58,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 color: Colors.white,
                 textSize: 30,
                 isTitle: true,
+              ),
+              const SizedBox(height: 8),
+              TextWidget(
+                text: "Sign up to continue",
+                color: Colors.white,
+                textSize: 18,
+                isTitle: false,
               )
             ],
           )
