@@ -36,7 +36,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 borderRadius: BorderRadius.circular(10),
                 child: const Icon(
                   IconlyLight.arrowLeft2,
