@@ -16,6 +16,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Stack(
       children: [
         Swiper(
+          duration: 1800,
+          autoplayDelay: 6000,
           itemBuilder: (context, index) {
             return Image.asset(
               Constss.authImagesPaths[index],
