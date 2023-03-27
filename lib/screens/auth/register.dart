@@ -2,6 +2,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
 
@@ -49,6 +50,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   color: theme == true ? Colors.black : Colors.white,
                   size: 25,
                 ),
+              ),
+              const SizedBox(height: 40.0),
+              TextWidget(
+                text: 'Welcome',
+                color: Colors.white,
+                textSize: 30,
+                isTitle: true,
               )
             ],
           )
