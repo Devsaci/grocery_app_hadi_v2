@@ -29,6 +29,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
         ),
         Container(
           color: Colors.black.withOpacity(0.7),
+        ),
+        Column(
+          children: [],
         )
       ],
     );
