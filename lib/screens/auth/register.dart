@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -13,7 +14,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset('assets/images/landing/buy-on-laptop.jpg'),
+        Swiper(
+          itemBuilder: (context, index) {
+            return Image.asset('assets/images/landing/buy-on-laptop.jpg');
+          },
+          itemCount: 3,
+        ),
       ],
     );
   }
