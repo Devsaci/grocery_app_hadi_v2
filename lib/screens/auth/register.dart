@@ -38,6 +38,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InkWell(
                 onTap: () {
