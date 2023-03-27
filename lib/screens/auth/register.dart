@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -31,7 +32,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
           color: Colors.black.withOpacity(0.7),
         ),
         Column(
-          children: [],
+          mainAxisAlignment: MainAxisAlignment.center,
+          
+          children: [
+            Icon(
+              IconlyLight.arrowLeft2,
+              color: Colors.white,
+              size: 25,
+            )
+          ],
         )
       ],
     );
