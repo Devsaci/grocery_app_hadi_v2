@@ -37,7 +37,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             children: [
               InkWell(
                 borderRadius: BorderRadius.circular(10),
-                child: Icon(
+                child: const Icon(
                   IconlyLight.arrowLeft2,
                   color: Colors.white,
                   size: 25,
