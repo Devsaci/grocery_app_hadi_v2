@@ -15,6 +15,8 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
+  var _formKey;
+
   @override
   Widget build(BuildContext context) {
     final theme = Utils(context).getTheme;
@@ -67,10 +69,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 isTitle: false,
               ),
               const SizedBox(height: 30.0),
-              const Form(
-                  child: Column(
-                children: [],
-              ))
+              Form(
+                  key: _formKey,
+                  child: const Column(
+                    children: [],
+                  ))
             ],
           )
         ],
