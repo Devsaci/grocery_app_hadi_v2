@@ -65,7 +65,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 color: Colors.white,
                 textSize: 18,
                 isTitle: false,
-              )
+              ),
+              const SizedBox(height: 30.0),
+              const Form(
+                  child: Column(
+                children: [],
+              ))
             ],
           )
         ],
