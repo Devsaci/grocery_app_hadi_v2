@@ -20,6 +20,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _emailFocusNode = FocusNode();
   final _emailTextController = TextEditingController();
   final _passFocusNode = FocusNode();
+  final _passTextController = TextEditingController();
+
   @override
   void dispose() {
     _fullNameController.dispose();
@@ -151,6 +153,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //Password
                         TextFormField(
                           focusNode: _passFocusNode,
+                          controller: _passTextController,
                           style: const TextStyle(color: Colors.white),
                           onEditingComplete: () =>
                               FocusScope.of(context).requestFocus(),
