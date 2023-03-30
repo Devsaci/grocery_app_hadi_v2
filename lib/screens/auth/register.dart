@@ -92,6 +92,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             return null;
                           }
                         },
+                        style: const TextStyle(color: Colors.white),
                       ),
                     ],
                   ))
