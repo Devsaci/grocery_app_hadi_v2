@@ -17,9 +17,12 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
   final _fullNameController = TextEditingController();
+  final _emailFocusNode = FocusNode();
+  final _emailTextController = TextEditingController();
   @override
   void dispose() {
     _fullNameController.dispose();
+    _emailTextController.dispose();
     super.dispose();
   }
 
@@ -95,6 +98,36 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       style: const TextStyle(color: Colors.white),
                       decoration: const InputDecoration(
                         hintText: 'Full name',
+                        hintStyle: TextStyle(color: Colors.white),
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        errorBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.red),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    TextFormField(
+                      focusNode: _emailFocusNode,
+                      textInputAction: TextInputAction.next,
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(),
+                      keyboardType: TextInputType.emailAddress,
+                      controller: _emailTextController,
+                      validator: (value) {
+                        if (value!.isEmpty || !value.contains("@")) {
+                          return "Please enter a valid Email adress";
+                        } else {
+                          return null;
+                        }
+                      },
+                      style: const TextStyle(color: Colors.white),
+                      decoration: const InputDecoration(
+                        hintText: 'Email',
                         hintStyle: TextStyle(color: Colors.white),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
