@@ -73,7 +73,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   key: _formKey,
                   child: Column(
                     children: [
-                      TextFormField(),
+                      TextFormField(
+                        textInputAction: TextInputAction.next,
+                      ),
                     ],
                   ))
             ],
