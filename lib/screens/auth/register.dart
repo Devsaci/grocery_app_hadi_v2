@@ -102,6 +102,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
                         ),
+                        errorBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.red),
+                        ),
                       ),
                     ),
                   ],
