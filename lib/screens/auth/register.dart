@@ -75,6 +75,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     children: [
                       TextFormField(
                         textInputAction: TextInputAction.next,
+                        onEditingComplete: () =>
+                            FocusScope.of(context).requestFocus(),
                       ),
                     ],
                   ))
