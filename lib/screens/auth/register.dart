@@ -85,6 +85,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             FocusScope.of(context).requestFocus(),
                         keyboardType: TextInputType.name,
                         controller: _fullNameController,
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "This Field is missing";
+                          } else {
+                            return null;
+                          }
+                        },
                       ),
                     ],
                   ))
