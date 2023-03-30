@@ -153,6 +153,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //Password
                         TextFormField(
                           focusNode: _passFocusNode,
+                          keyboardType: TextInputType.visiblePassword,
                           controller: _passTextController,
                           style: const TextStyle(color: Colors.white),
                           onEditingComplete: () =>
