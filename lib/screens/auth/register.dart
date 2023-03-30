@@ -15,7 +15,7 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  var _formKey;
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
