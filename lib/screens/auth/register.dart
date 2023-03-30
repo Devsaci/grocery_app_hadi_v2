@@ -159,6 +159,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           onEditingComplete: () =>
                               FocusScope.of(context).requestFocus(),
                           decoration: const InputDecoration(
+                            suffixIcon: Icon(
+                              Icons.visibility,
+                              color: Colors.white,
+                            ),
                             hintText: 'Password',
                             hintStyle: TextStyle(color: Colors.white),
                             enabledBorder: UnderlineInputBorder(
