@@ -111,6 +111,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                     ),
                     const SizedBox(height: 20),
+                    // email
                     TextFormField(
                       focusNode: _emailFocusNode,
                       textInputAction: TextInputAction.next,
@@ -128,6 +129,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       style: const TextStyle(color: Colors.white),
                       decoration: const InputDecoration(
                         hintText: 'Email',
+                        hintStyle: TextStyle(color: Colors.white),
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        errorBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.red),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    //Password
+                    TextFormField(
+                      style: const TextStyle(color: Colors.white),
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(),
+                      decoration: const InputDecoration(
+                        hintText: 'Password',
                         hintStyle: TextStyle(color: Colors.white),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
