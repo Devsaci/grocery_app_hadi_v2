@@ -16,6 +16,7 @@ class RegisterScreen extends StatefulWidget {
 
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
+  final _fullNameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -78,6 +79,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onEditingComplete: () =>
                             FocusScope.of(context).requestFocus(),
                         keyboardType: TextInputType.name,
+                        controller: _fullNameController,
                       ),
                     ],
                   ))
