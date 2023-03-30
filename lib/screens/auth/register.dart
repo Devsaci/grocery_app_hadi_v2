@@ -76,26 +76,31 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               const SizedBox(height: 30.0),
               Form(
-                  key: _formKey,
-                  child: Column(
-                    children: [
-                      TextFormField(
-                        textInputAction: TextInputAction.next,
-                        onEditingComplete: () =>
-                            FocusScope.of(context).requestFocus(),
-                        keyboardType: TextInputType.name,
-                        controller: _fullNameController,
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return "This Field is missing";
-                          } else {
-                            return null;
-                          }
-                        },
-                        style: const TextStyle(color: Colors.white),
+                key: _formKey,
+                child: Column(
+                  children: [
+                    TextFormField(
+                      textInputAction: TextInputAction.next,
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(),
+                      keyboardType: TextInputType.name,
+                      controller: _fullNameController,
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "This Field is missing";
+                        } else {
+                          return null;
+                        }
+                      },
+                      style: const TextStyle(color: Colors.white),
+                      decoration: const InputDecoration(
+                        hintText: 'Full name',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
-                    ],
-                  ))
+                    ),
+                  ],
+                ),
+              ),
             ],
           )
         ],
