@@ -21,6 +21,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _emailTextController = TextEditingController();
   final _passFocusNode = FocusNode();
   final _passTextController = TextEditingController();
+  final _addressFocusNode = FocusNode();
 
   bool _obscureText = true;
 
@@ -29,6 +30,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _fullNameController.dispose();
     _emailTextController.dispose();
     _passFocusNode.dispose();
+    _addressFocusNode.dispose();
     super.dispose();
   }
 
@@ -155,17 +157,25 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //Password
                         TextFormField(
                           focusNode: _passFocusNode,
+                          obscureText: _obscureText,
                           keyboardType: TextInputType.visiblePassword,
                           controller: _passTextController,
                           style: const TextStyle(color: Colors.white),
-                          onEditingComplete: () =>
-                              FocusScope.of(context).requestFocus(),
+                          onEditingComplete: () => FocusScope.of(context)
+                              .requestFocus(_addressFocusNode),
                           decoration: InputDecoration(
-                            suffixIcon: Icon(
-                              _obscureText
-                                  ? Icons.visibility
-                                  : Icons.visibility_off,
-                              color: Colors.white,
+                            suffixIcon: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _obscureText = !_obscureText;
+                                });
+                              },
+                              child: Icon(
+                                _obscureText
+                                    ? Icons.visibility
+                                    : Icons.visibility_off,
+                                color: Colors.white,
+                              ),
                             ),
                             hintText: 'Password',
                             hintStyle: const TextStyle(color: Colors.white),
