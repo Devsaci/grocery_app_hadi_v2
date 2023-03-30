@@ -77,6 +77,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         textInputAction: TextInputAction.next,
                         onEditingComplete: () =>
                             FocusScope.of(context).requestFocus(),
+                        keyboardType: TextInputType.name,
                       ),
                     ],
                   ))
