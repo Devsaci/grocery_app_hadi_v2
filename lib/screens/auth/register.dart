@@ -22,6 +22,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _passFocusNode = FocusNode();
   final _passTextController = TextEditingController();
 
+  bool _obscureText = true;
+
   @override
   void dispose() {
     _fullNameController.dispose();
@@ -158,20 +160,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           style: const TextStyle(color: Colors.white),
                           onEditingComplete: () =>
                               FocusScope.of(context).requestFocus(),
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             suffixIcon: Icon(
-                              Icons.visibility,
+                              _obscureText
+                                  ? Icons.visibility
+                                  : Icons.visibility_off,
                               color: Colors.white,
                             ),
                             hintText: 'Password',
-                            hintStyle: TextStyle(color: Colors.white),
-                            enabledBorder: UnderlineInputBorder(
+                            hintStyle: const TextStyle(color: Colors.white),
+                            enabledBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ),
-                            focusedBorder: UnderlineInputBorder(
+                            focusedBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ),
-                            errorBorder: UnderlineInputBorder(
+                            errorBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.red),
                             ),
                           ),
