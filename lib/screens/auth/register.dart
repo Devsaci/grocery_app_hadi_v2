@@ -96,6 +96,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       decoration: const InputDecoration(
                         hintText: 'Full name',
                         hintStyle: TextStyle(color: Colors.white),
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
                       ),
                     ),
                   ],
