@@ -193,7 +193,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 _obscureText
                                     ? Icons.visibility_off
                                     : Icons.visibility,
-                                color: Colors.white,
+                                color: Colors.amberAccent[700],
                               ),
                             ),
                             hintText: 'Password',
