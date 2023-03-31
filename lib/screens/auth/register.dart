@@ -273,12 +273,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const SizedBox(height: 10),
                   RichText(
                     text: const TextSpan(
-                      text: 'Already a user?',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
-                    ),
+                        text: 'Already a user?',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                        children: []),
                   ),
                 ],
               ),
