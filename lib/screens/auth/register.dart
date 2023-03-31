@@ -240,6 +240,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ],
                     ),
                   ),
+                  const SizedBox(height: 5.0),
+                  // 'Forget password?'
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Forget password?",
+                    ),
+                  ),
                 ],
               ),
             ),
