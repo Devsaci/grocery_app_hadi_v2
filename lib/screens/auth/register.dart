@@ -1,4 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
@@ -272,18 +273,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   const SizedBox(height: 10),
                   RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                       text: 'Already a user?',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 18,
                       ),
                       children: [
                         TextSpan(
                           text: '      Sign in',
-                          style:
-                              TextStyle(color: Colors.lightBlue, fontSize: 18),
-                        )
+                          style: const TextStyle(
+                              color: Colors.lightBlue, fontSize: 18),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              Navigator.pushReplacementNamed(
+                                  context, LoginScreen.routeName);
+                            },
+                        ),
                       ],
                     ),
                   ),
