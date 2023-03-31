@@ -34,7 +34,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
     super.dispose();
   }
 
-  void _submitFormOnRegister() {}
+  void _submitFormOnRegister() {
+    _formKey.currentState!.validate();
+  }
 
   @override
   Widget build(BuildContext context) {
