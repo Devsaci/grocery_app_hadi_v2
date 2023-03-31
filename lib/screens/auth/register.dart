@@ -172,8 +172,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               },
                               child: Icon(
                                 _obscureText
-                                    ? Icons.visibility
-                                    : Icons.visibility_off,
+                                    ? Icons.visibility_off
+                                    : Icons.visibility,
                                 color: Colors.white,
                               ),
                             ),
