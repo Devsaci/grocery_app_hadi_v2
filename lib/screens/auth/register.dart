@@ -4,6 +4,7 @@ import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
 import 'package:grocery_app_hadi_v1/screens/auth/login.dart';
 import 'package:grocery_app_hadi_v1/services/global_methods.dart';
+import 'package:grocery_app_hadi_v1/widgets/auth_button.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
@@ -262,6 +263,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 5.0),
+                  AuthButton(
+                    fct: () {},
+                    buttonText: 'Sign up',
+                  )
                 ],
               ),
             ),
