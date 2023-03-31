@@ -34,6 +34,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
     super.dispose();
   }
 
+  void _submitFormOnRegister() {}
+
   @override
   Widget build(BuildContext context) {
     final theme = Utils(context).getTheme;
@@ -202,6 +204,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         TextFormField(
                           focusNode: _addressFocusNode,
                           textInputAction: TextInputAction.done,
+                          onEditingComplete: _submitFormOnRegister,
                           style: const TextStyle(color: Colors.white),
                           maxLines: 2,
                           textAlign: TextAlign.start,
