@@ -35,7 +35,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   void _submitFormOnRegister() {
-    _formKey.currentState!.validate();
+    final isValid = _formKey.currentState!.validate();
+
+    if (isValid) {
+      _formKey.currentState!.save();
+    }
   }
 
   @override
