@@ -197,6 +197,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 20),
+                        //Shipping address
+                        TextFormField(
+                          style: const TextStyle(color: Colors.white),
+                          maxLines: 2,
+                          textAlign: TextAlign.start,
+                          decoration: const InputDecoration(
+                            hintText: 'Shipping address',
+                            hintStyle: TextStyle(color: Colors.white),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white),
+                            ),
+                            errorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.red),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
