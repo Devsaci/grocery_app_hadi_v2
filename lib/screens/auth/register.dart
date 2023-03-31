@@ -160,6 +160,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           obscureText: _obscureText,
                           keyboardType: TextInputType.visiblePassword,
                           controller: _passTextController,
+                          validator: (value) {
+                            if (value!.isEmpty || value.length < 7) {
+                              return "Please enter a valid password";
+                            } else {
+                              return null;
+                            }
+                          },
                           style: const TextStyle(color: Colors.white),
                           onEditingComplete: () => FocusScope.of(context)
                               .requestFocus(_addressFocusNode),
