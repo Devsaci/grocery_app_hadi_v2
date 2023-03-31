@@ -11,6 +11,8 @@ https://www.udemy.com/course/flutter-210firebase-build-a-grocery-app-with-admin-
 
 https://github.com/hadikachmar3
 
+https://github.com/hadikachmar3/grocery_admin_panel_course
+
 https://www.youtube.com/channel/UCTGDYkqUtgCelc6G09LUm6w
 
 
