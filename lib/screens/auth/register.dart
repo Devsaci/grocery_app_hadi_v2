@@ -201,6 +201,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //Shipping address
                         TextFormField(
                           focusNode: _addressFocusNode,
+                          textInputAction: TextInputAction.done,
                           style: const TextStyle(color: Colors.white),
                           maxLines: 2,
                           textAlign: TextAlign.start,
