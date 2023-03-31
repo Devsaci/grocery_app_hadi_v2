@@ -22,6 +22,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _passFocusNode = FocusNode();
   final _passTextController = TextEditingController();
   final _addressFocusNode = FocusNode();
+  final _addressTextController = TextEditingController();
 
   bool _obscureText = true;
 
@@ -31,6 +32,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _emailTextController.dispose();
     _passFocusNode.dispose();
     _addressFocusNode.dispose();
+    _addressTextController.dispose();
     super.dispose();
   }
 
@@ -211,6 +213,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           focusNode: _addressFocusNode,
                           textInputAction: TextInputAction.done,
                           onEditingComplete: _submitFormOnRegister,
+                          controller: _addressTextController,
                           style: const TextStyle(color: Colors.white),
                           maxLines: 2,
                           textAlign: TextAlign.start,
