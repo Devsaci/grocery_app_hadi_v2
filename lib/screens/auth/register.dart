@@ -242,16 +242,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   const SizedBox(height: 5.0),
                   // 'Forget password?'
-                  TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "Forget password?",
-                      maxLines: 1,
-                      style: TextStyle(
-                          color: Colors.lightBlue,
-                          fontSize: 18,
-                          decoration: TextDecoration.underline,
-                          fontStyle: FontStyle.italic),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        "Forget password?",
+                        maxLines: 1,
+                        style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontSize: 18,
+                            decoration: TextDecoration.underline,
+                            fontStyle: FontStyle.italic),
+                      ),
                     ),
                   ),
                 ],
