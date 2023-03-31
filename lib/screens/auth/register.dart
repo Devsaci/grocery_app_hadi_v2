@@ -2,6 +2,8 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/const/Constss.dart';
+import 'package:grocery_app_hadi_v1/screens/auth/login.dart';
+import 'package:grocery_app_hadi_v1/services/global_methods.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 import '../../services/utils.dart';
@@ -245,7 +247,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        GlobalMethods.navigateTo(
+                            ctx: context, routeName: LoginScreen.routeName);
+                      },
                       child: const Text(
                         "Forget password?",
                         maxLines: 1,
