@@ -200,6 +200,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const SizedBox(height: 20),
                         //Shipping address
                         TextFormField(
+                          focusNode: _addressFocusNode,
                           style: const TextStyle(color: Colors.white),
                           maxLines: 2,
                           textAlign: TextAlign.start,
