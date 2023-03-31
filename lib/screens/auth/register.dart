@@ -36,7 +36,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   void _submitFormOnRegister() {
     final isValid = _formKey.currentState!.validate();
-
+    FocusScope.of(context).unfocus();
     if (isValid) {
       _formKey.currentState!.save();
     }
